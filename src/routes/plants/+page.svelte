@@ -23,10 +23,15 @@
 	</p>
 
 	<ul class="plant-list">
-		{#each DATA as item}
+		{#each DATA as item, i}
 			<a href="/plants/{item.id}" class="plant-link">
 				<li class="plant-card">
-					<img src={item.image} alt={item.name} class="plant-card_image" />
+					<img
+						src={item.image}
+						alt={item.name}
+						class="plant-card_image"
+						loading={i < 2 ? 'eager' : 'lazy'}
+					/>
 					<h2 class="plant-card_name">{item.name}</h2>
 				</li>
 			</a>

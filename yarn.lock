@@ -152,10 +152,15 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.43.0.tgz#559ca3d9ddbd6bf907ad524320a0d14b85586af0"
   integrity sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==
 
-"@fontsource/fira-mono@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/fira-mono/-/fira-mono-5.0.3.tgz#95ec279624654d0d253e19f365ec297929873eae"
-  integrity sha512-AN08SykeaFazTC0d0HHOZeQ3jmHyn2Qs5bGEjhxuNp9NjUqg9rL8x+LxrXWdVIo8PBg0xbnkcA3KR6RVvQeRAg==
+"@fontsource/jockey-one@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/jockey-one/-/jockey-one-5.0.4.tgz#332f3b171be41b36fdd0b628648c2cfcccae4387"
+  integrity sha512-UizKuBhafLhTT7ZrQje8ecbNWv8bNPX5DApGUOczkS97Zr4otHx16PYbro4aMq1hKnnDIFhHqvH2U4Rzv7s1SA==
+
+"@fontsource/merriweather@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/merriweather/-/merriweather-5.0.4.tgz#80903922378b03edf6803b6e8038932f06daddb8"
+  integrity sha512-l2+/RuGrrDc0ZimeDw8P33Jlfut+gj2OMRYhls/FFqLE5wR5dNNi2qpR5rYor52sSRE4R46eHcfbuhLzktovpQ==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
