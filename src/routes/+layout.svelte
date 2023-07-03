@@ -75,7 +75,7 @@
 		font-weight: bold;
 	}
 
-	@media (min-width: 480px) {
+	@media screen and (min-width: 480px) {
 		footer {
 			padding: 12px 0;
 		}

@@ -62,6 +62,12 @@
 		background-color: #ccc;
 	}
 
+	@media screen and (max-width: 768px) {
+		.banner {
+			height: 8rem;
+		}
+	}
+
 	.description {
 		white-space: pre-wrap;
 	}
