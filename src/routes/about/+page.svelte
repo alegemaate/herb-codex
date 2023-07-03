@@ -11,5 +11,7 @@
 <div class="text-column">
 	<h1>About this app</h1>
 
+	<hr />
+
 	<p>Created by Allan Legemaate as a learning project for SvelteKit.</p>
 </div>

@@ -12,7 +12,7 @@
 <div class="text-column">
 	<h1>Plants</h1>
 
-	<h2>Information about useful and not so useful plants.</h2>
+	<p>Information about useful and not so useful plants.</p>
 
 	<hr />
 
@@ -27,7 +27,7 @@
 			<a href="/plants/{item.id}" class="plant-link">
 				<li class="plant-card">
 					<img src={item.image} alt={item.name} class="plant-card_image" />
-					<h3 class="plant-card_name">{item.name}</h3>
+					<h2 class="plant-card_name">{item.name}</h2>
 				</li>
 			</a>
 		{/each}
