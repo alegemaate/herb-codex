@@ -10,6 +10,22 @@
 		href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
 		rel="stylesheet"
 	/>
+
+	<meta name="keywords" content="herb, codex, herbcodex, plants, plant, herbs, weeds, useful" />
+	<meta name="author" content="Allan Legemaate" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#15490c" />
+
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="application-name" content="HerbCodex" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#15490c" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="HerbCodex" />
+
+	<meta name="msapplication-navbutton-color" content="#15490c" />
+	<meta name="msapplication-tooltip" content="HerbCodex" />
+	<meta name="msapplication-starturl" content="/" />
+	<meta name="msapplication-tap-highlight" content="no" />
 </svelte:head>
 
 <div class="app">
@@ -42,7 +58,7 @@
 		padding: 1.5625rem;
 		flex-direction: column;
 		align-items: flex-start;
-		border-radius: 0.7rem;
+		border-radius: var(--border-radius);
 		background: #fff;
 		box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
 		margin: 1rem 0 6rem 0;

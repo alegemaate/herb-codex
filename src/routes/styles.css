@@ -12,6 +12,7 @@
 	--color-text: rgba(0, 0, 0, 1);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
+	--border-radius: 0.8rem;
 	font-family: var(--font-body);
 	color: var(--color-text);
 }
@@ -61,18 +62,24 @@ a:hover {
 h1 {
 	font-size: 2.625rem;
 	font-family: Jockey One;
-	margin: 0.2rem;
+	margin: 1.4rem 0.2rem 0.2rem 0.2rem;
 }
 
 h2 {
-	font-size: 2rem;
-	margin: 0.2rem;
+	font-size: 1.8rem;
+	margin: 1.4rem 0.2rem 0.2rem 0.2rem;
 	font-weight: 400;
 }
 
 h3 {
 	font-size: 1.6rem;
-	margin: 0.2rem;
+	margin: 1.4rem 0.2rem 0.2rem 0.2rem;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 1.2rem;
+	margin: 1.4rem 0.2rem 0.2rem 0.2rem;
 	font-weight: 400;
 }
 
@@ -103,12 +110,6 @@ button {
 
 button:focus:not(:focus-visible) {
 	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
 }
 
 .visually-hidden {

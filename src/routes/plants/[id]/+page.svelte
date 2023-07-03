@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_CONSTANTS } from '$lib/constants';
 	import type { PageData } from './$types';
 	import Gallery from './Gallery.svelte';
 
@@ -6,8 +7,13 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>{data.plant.name} | HerbCodex</title>
+	<meta
+		name="description"
+		content="Usage, location and other information about {data.plant.name} ({data.plant
+			.classification.species})."
+	/>
+	<link rel="canonical" href={`${SITE_CONSTANTS.SITE_URL}/plants/${data.plant.id}`} />
 </svelte:head>
 
 <div class="text-column">
@@ -51,7 +57,7 @@
 		width: 100%;
 		height: 20rem;
 		object-fit: cover;
-		border-radius: 0.7rem;
+		border-radius: var(--border-radius);
 		background-color: #ccc;
 	}
 

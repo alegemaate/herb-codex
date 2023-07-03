@@ -60,7 +60,7 @@
 		width: 100%;
 		height: 100%;
 		cursor: zoom-in;
-		border-radius: 0.7rem;
+		border-radius: var(--border-radius);
 		overflow: hidden;
 	}
 
@@ -86,7 +86,7 @@
 		position: relative;
 		width: auto;
 		height: 70%;
-		border-radius: 0.7rem;
+		border-radius: var(--border-radius);
 		overflow: hidden;
 	}
 

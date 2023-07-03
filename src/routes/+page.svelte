@@ -1,6 +1,11 @@
+<script>
+	import { SITE_CONSTANTS } from '$lib/constants';
+</script>
+
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Home | HerbCodex</title>
+	<meta name="description" content="HerbCodex targets to document common plants and their uses." />
+	<link rel="canonical" href={SITE_CONSTANTS.SITE_URL} />
 </svelte:head>
 
 <section>
@@ -11,9 +16,3 @@
 	<p><a href="/plants">View all plants</a></p>
 	<p><a href="/classifications">View all classifications</a></p>
 </section>
-
-<style>
-	h1 {
-		width: 100%;
-	}
-</style>

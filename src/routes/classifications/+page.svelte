@@ -1,27 +1,31 @@
 <script lang="ts">
+	import { SITE_CONSTANTS } from '$lib/constants';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 </script>
 
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>Classifications | HerbCodex</title>
+	<meta name="description" content="Plant classification hierarchy." />
+	<link rel="canonical" href={`${SITE_CONSTANTS.SITE_URL}/classifications`} />
 </svelte:head>
 
 <div class="text-column">
 	<h1>Classifications</h1>
 
-	<p>Classification Index</p>
+	<h2>Classification Index</h2>
+
+	<hr />
 
 	<ul>
 		{#each Object.entries(data.classifications) as [family, genuses]}
 			<li>
-				<h2 class="family-title">{family}</h2>
+				<h3 class="family-title">{family}</h3>
 				<ul>
 					{#each Object.entries(genuses) as [genus, plants]}
 						<li>
-							<h3 class="genus-title">{genus}</h3>
+							<h4 class="genus-title">{genus}</h4>
 							{#each plants as plant}
 								<a class="plant-link" href={`/plants/${plant.id}`}>
 									{plant.classification.species} ({plant.name})</a
@@ -37,7 +41,7 @@
 
 <style>
 	.family-title {
-		margin-top: 1em;
+		margin-top: 1rem;
 	}
 
 	.genus-title {
@@ -46,6 +50,5 @@
 
 	.plant-link {
 		display: block;
-		margin-left: 2em;
 	}
 </style>
