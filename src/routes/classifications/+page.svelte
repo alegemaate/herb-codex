@@ -14,18 +14,18 @@
 <div class="text-column">
 	<h1>Classifications</h1>
 
-	<h2>Classification Index</h2>
+	<p>Plant classification hierarchy map.</p>
 
 	<hr />
 
-	<ul>
+	<ul class="family-tree">
 		{#each Object.entries(data.classifications) as [family, genuses]}
 			<li>
-				<h3 class="family-title">{family}</h3>
-				<ul>
+				<h2>{family}</h2>
+				<ul class="genus-tree">
 					{#each Object.entries(genuses) as [genus, plants]}
-						<li>
-							<h4 class="genus-title">{genus}</h4>
+						<li class="genus">
+							<p>{genus}</p>
 							{#each plants as plant}
 								<a class="plant-link" href={`/plants/${plant.id}`}>
 									{plant.classification.species} ({plant.name})</a
@@ -40,15 +40,22 @@
 </div>
 
 <style>
-	.family-title {
-		margin-top: 1rem;
+	.family-tree {
+		list-style: none;
+		padding-left: 0;
 	}
 
-	.genus-title {
-		margin-top: 0;
+	.genus-tree {
+		list-style: none;
+		padding-left: 1rem;
+	}
+
+	.genus {
+		margin-top: 0.5rem;
 	}
 
 	.plant-link {
 		display: block;
+		margin-left: 1rem;
 	}
 </style>

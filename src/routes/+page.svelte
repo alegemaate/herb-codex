@@ -11,7 +11,9 @@
 <section>
 	<h1>HerbCodex</h1>
 
-	<h2>Documenting information about useful and not so useful herbs.</h2>
+	<p>Documenting information about useful and not so useful herbs.</p>
+
+	<hr />
 
 	<p><a href="/plants">View all plants</a></p>
 	<p><a href="/classifications">View all classifications</a></p>
