@@ -17,7 +17,7 @@
 </svelte:head>
 
 <div class="text-column">
-	<img src={data.plant.image} alt={data.plant.name} class="banner" />
+	<img src={data.plant.image} alt={data.plant.name} class="banner" loading="eager" />
 
 	<h1>{data.plant.name}</h1>
 
@@ -43,6 +43,7 @@
 		<hr />
 		<iframe
 			class="map"
+			loading="lazy"
 			src={data.plant.mapUrl}
 			title={`${data.plant.name} map`}
 			frameborder="0"

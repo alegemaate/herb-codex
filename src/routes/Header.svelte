@@ -42,7 +42,7 @@
 
 	.header-inner {
 		display: flex;
-		max-width: 50rem;
+		max-width: var(--max-width);
 		width: 100%;
 		align-items: center;
 		font-family: Jockey One;
@@ -61,7 +61,7 @@
 
 	ul {
 		display: flex;
-		max-width: 50rem;
+		max-width: var(--max-width);
 		width: 100%;
 		align-items: center;
 		gap: 1.125rem;

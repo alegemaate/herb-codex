@@ -15,14 +15,6 @@
 	const handleCloseButton = () => {
 		selectedImage = null;
 	};
-
-	const handleBackdropClick = (e: MouseEvent) => {
-		if (!(e.target instanceof HTMLElement) || !e.target.classList.contains('zoom-container')) {
-			return;
-		}
-
-		selectedImage = null;
-	};
 </script>
 
 <div class="gallery">
@@ -34,7 +26,7 @@
 			on:click={() => handleZoom(image)}
 			on:keydown={() => handleZoom(image)}
 		>
-			<img src={image.src} alt="" />
+			<img src={image.src} alt="" loading="lazy" />
 		</div>
 	{/each}
 
@@ -66,12 +58,13 @@
 
 	img {
 		width: 100%;
-		height: 100%;
+		height: auto;
 		object-fit: cover;
 	}
 
 	.zoom-container {
 		position: fixed;
+		z-index: 2;
 		top: 0;
 		left: 0;
 		width: 100%;
