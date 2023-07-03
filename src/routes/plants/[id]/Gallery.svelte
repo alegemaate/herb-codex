@@ -54,11 +54,12 @@
 		cursor: zoom-in;
 		border-radius: var(--border-radius);
 		overflow: hidden;
+		background-color: #ccc;
 	}
 
 	img {
 		width: 100%;
-		height: auto;
+		height: 100%;
 		object-fit: cover;
 	}
 
