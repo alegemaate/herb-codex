@@ -4,48 +4,57 @@
 	import Gallery from './Gallery.svelte';
 
 	export let data: PageData;
+
+	const { plant } = data;
+	const { family, genus, species } = plant.classification;
+
+	const familyId = family.toLocaleLowerCase();
+	const genusId = `${familyId}-${genus.toLocaleLowerCase()}`;
 </script>
 
 <svelte:head>
-	<title>{data.plant.name} | HerbCodex</title>
+	<title>{plant.name} | HerbCodex</title>
 	<meta
 		name="description"
-		content="Usage, location and other information about {data.plant.name} ({data.plant
-			.classification.species})."
+		content="Usage, location and other information about {plant.name} ({plant.classification
+			.species})."
 	/>
-	<link rel="canonical" href={`${SITE_CONSTANTS.SITE_URL}/plants/${data.plant.id}`} />
+	<link rel="canonical" href={`${SITE_CONSTANTS.SITE_URL}/plants/${plant.id}`} />
 </svelte:head>
 
 <div class="text-column">
-	<img src={data.plant.image} alt={data.plant.name} class="banner" loading="eager" />
+	<img src={plant.image} alt={plant.name} class="banner" loading="eager" />
 
-	<h1>{data.plant.name}</h1>
+	<h1>{plant.name}</h1>
 
 	<hr />
 
 	<p class="family">
-		Family: {data.plant.classification.family} - Genus: {data.plant.classification.genus} - Species:
-		{data.plant.classification.species}
+		Family: <a href="/classifications#{familyId}">{family}</a>
+		- Genus:
+		<a href="/classifications#{genusId}">{genus}</a>
+		- Species:
+		{species}
 	</p>
 
-	<p>Other names: {data.plant.otherNames.join(', ')}</p>
+	<p>Other names: {plant.otherNames.join(', ')}</p>
 
 	<p class="description">
-		{data.plant.description}
+		{plant.description}
 	</p>
 
 	<h2>Gallery</h2>
 	<hr />
-	<Gallery images={data.plant.gallery} />
+	<Gallery images={plant.gallery} />
 
-	{#if data.plant.mapUrl}
+	{#if plant.mapUrl}
 		<h2>Map</h2>
 		<hr />
 		<iframe
 			class="map"
 			loading="lazy"
-			src={data.plant.mapUrl}
-			title={`${data.plant.name} map`}
+			src={plant.mapUrl}
+			title={`${plant.name} map`}
 			frameborder="0"
 			allowfullscreen
 		/>

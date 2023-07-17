@@ -21,11 +21,11 @@
 	<ul class="family-tree">
 		{#each Object.entries(data.classifications) as [family, genuses]}
 			<li>
-				<h2>{family}</h2>
+				<h2 id={family.toLocaleLowerCase()}>{family}</h2>
 				<ul class="genus-tree">
 					{#each Object.entries(genuses) as [genus, plants]}
 						<li class="genus">
-							<p>{genus}</p>
+							<p id={`${family.toLocaleLowerCase()}-${genus.toLocaleLowerCase()}`}>{genus}</p>
 							{#each plants as plant}
 								<a class="plant-link" href={`/plants/${plant.id}`}>
 									{plant.classification.species} ({plant.name})</a
