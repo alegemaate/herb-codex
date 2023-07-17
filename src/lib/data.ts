@@ -185,7 +185,7 @@ In summary, black medic (Medicago lupulina) is a low-growing annual plant with s
 			species: 'A. lappa'
 		},
 		name: 'Burdock',
-		otherNames: ['Black Medick', 'Hop Clover', 'Yellow Trefoil'],
+		otherNames: ['Beggar’s Buttons', 'Lappa', 'Thorny Burr'],
 		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/burdock.webP',
 		gallery: [
 			{
@@ -203,21 +203,23 @@ In summary, black medic (Medicago lupulina) is a low-growing annual plant with s
 		],
 		mapUrl:
 			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lng=-96.064453&lat=%2036.633162&subjectnumber=&sub=27053&map=distribution',
-		description: `Black medic, scientifically known as Medicago lupulina, is a flowering annual plant that belongs to the Fabaceae family, which is the pea family. It is also commonly referred to as hop clover or black medick. Black medic is native to Europe and Asia but has naturalized in various parts of North America and other regions around the world.
+		description: `Arctium lappa, commonly known as burdock, is a biennial herbaceous plant that belongs to the Asteraceae family. It is native to Europe and has naturalized in various regions around the world. Burdock is well-known for its distinctive appearance and has been used for both culinary and medicinal purposes.
 
-The plant typically grows low to the ground, reaching heights of 6 to 18 inches (15 to 45 cm). It has a spreading habit, with branching stems that often form dense mats or patches. The leaves of black medic are composed of three leaflets, arranged alternately along the stems. The leaflets are oval-shaped with toothed margins, giving them a distinctive appearance. The leaves are typically bright green in color and have a soft texture.
+Burdock is a robust plant that can grow up to 6 feet (2 meters) in height. It has large, heart-shaped leaves that are rough to the touch and can measure up to 2 feet (60 centimeters) in length. The plant produces tall, sturdy stems with multiple branches. Burdock blooms in the second year, producing clusters of small, purple or pink flowers that develop into burr-like seed heads. These seed heads have hooked bristles that easily attach to clothing or animal fur, aiding in seed dispersal.
 
-Black medic produces small, yellow flowers that are clustered together in tight, spherical heads. These flower heads resemble small, clover-like structures and are borne on elongated stalks. The flowers bloom from late spring through summer, attracting various pollinators like bees and butterflies.
+As an herbalist, burdock is highly regarded for its potential medicinal properties. The roots, leaves, and seeds of burdock contain various bioactive compounds, including inulin, mucilage, flavonoids, and lignans, which contribute to its therapeutic effects.
 
-After flowering, black medic forms small, round seed pods that contain seeds. The seed pods initially appear green but eventually turn black as they mature and dry out. These seed pods resemble tiny, flattened spheres and can often be found within the dense foliage of the plant.
+Burdock root has been traditionally used to support healthy liver function and promote detoxification. It is believed to have hepatoprotective properties and may help stimulate the production and flow of bile, supporting the body's natural detoxification processes.
 
-While black medic is primarily considered a weed and is not commonly utilized for medicinal or culinary purposes, it does have some historical associations and uses. In traditional herbalism, the aerial parts of the plant were occasionally used in decoctions or infusions as a diuretic and for urinary tract conditions. The plant has also been used as fodder for livestock due to its high nutritional value.
+Furthermore, burdock is known for its potential benefits for the skin. The root has been used as a traditional remedy for skin conditions, such as acne, eczema, and psoriasis. Burdock root extracts are believed to have anti-inflammatory and antioxidant effects, which may help soothe skin irritations and promote a healthy complexion.
 
-From an ecological perspective, black medic can play a beneficial role in the ecosystem. Like other legumes, it has the ability to fix nitrogen from the atmosphere into the soil, contributing to soil fertility. It can also provide a source of forage for certain wildlife species.
+Burdock root is also valued for its diuretic properties. It has been used to support kidney health and promote urine flow, aiding in the elimination of toxins and excess fluids from the body. This diuretic action, along with its potential anti-inflammatory effects, may be beneficial for conditions such as urinary tract infections and edema.
 
-However, black medic is often considered a weed in lawns, gardens, and agricultural fields. Its ability to spread rapidly and form dense mats can be problematic, particularly in areas where it competes with desired plants for resources. It is important to implement appropriate management strategies if black medic becomes invasive in a particular area.
-		
-In summary, black medic (Medicago lupulina) is a low-growing annual plant with spreading stems, three-leaflet leaves, and small, yellow flower clusters. While not extensively used for medicinal or culinary purposes, it has historical associations with diuretic properties. Black medic can provide ecological benefits but can also become invasive in certain contexts. As with any wild plant, it is important to understand its characteristics and potential impact before managing or utilizing it.`
+In culinary practices, burdock is often used as a vegetable. The young leaves and stems can be cooked and eaten like greens, while the root is commonly used in stir-fries, soups, and herbal teas. The root has a mild, earthy flavor and a crunchy texture when cooked.
+
+It is important to note that while burdock is generally considered safe for most individuals when used appropriately, some people may experience allergic reactions to the plant. As with any herbal remedy or wild plant, it is recommended to exercise caution, properly identify burdock, and consult with a qualified healthcare practitioner or herbalist before using it, especially if you have any known allergies or are taking medications.
+
+In summary, burdock (Arctium lappa) is a biennial herbaceous plant known for its potential medicinal and culinary uses. The root of burdock is valued for its support of liver health, promotion of healthy skin, and diuretic properties. Burdock root can be incorporated into culinary preparations, and the young leaves and stems can be consumed as a vegetable. As always, seeking professional advice and using caution when using wild plants is advisable.`
 	},
 	{
 		id: 'shepherds-purse',
