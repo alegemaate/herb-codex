@@ -1,43 +1,44 @@
 export interface Plant {
-	id: string;
-	classification: {
-		family: string;
-		subFamily?: string;
-		tribe?: string;
-		genus: string;
-		species: string;
-	};
-	name: string;
-	otherNames: string[];
-	image: string;
-	gallery: {
-		src: string;
-		caption: string;
-	}[];
-	description: string;
-	mapUrl?: string;
+  id: string;
+  classification: {
+    family: string;
+    subFamily?: string;
+    tribe?: string;
+    genus: string;
+    species: string;
+  };
+  name: string;
+  otherNames: string[];
+  image: string;
+  gallery: {
+    src: string;
+    caption: string;
+  }[];
+  description: string;
+  mapUrl?: string;
 }
 
 export const DATA: Plant[] = [
-	{
-		id: 'lambs-quarters',
-		classification: {
-			family: 'Amaranthaceae',
-			genus: 'Chenopodium',
-			species: 'C. berlandieri'
-		},
-		name: 'Lambs Quarters',
-		otherNames: ['pitseed goosefoot'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/lambs_quarters.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/lambs_quarters.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&lat=%2036.633162&sub=5294&zoom=4&map=distribution&lng=-96.064453',
-		description: `Lamb's quarters, scientifically known as Chenopodium berlandieri, is a versatile and nutritious wild plant that belongs to the family Amaranthaceae. It is also commonly referred to as goosefoot, pigweed, or wild spinach. Lamb's quarters is widely distributed across North America and can be found in various habitats, including gardens, fields, roadsides, and disturbed areas.
+  {
+    id: "lambs-quarters",
+    classification: {
+      family: "Amaranthaceae",
+      genus: "Chenopodium",
+      species: "C. berlandieri",
+    },
+    name: "Lambs Quarters",
+    otherNames: ["pitseed goosefoot"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/lambs_quarters.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/lambs_quarters.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&lat=%2036.633162&sub=5294&zoom=4&map=distribution&lng=-96.064453",
+    description: `Lamb's quarters, scientifically known as Chenopodium berlandieri, is a versatile and nutritious wild plant that belongs to the family Amaranthaceae. It is also commonly referred to as goosefoot, pigweed, or wild spinach. Lamb's quarters is widely distributed across North America and can be found in various habitats, including gardens, fields, roadsides, and disturbed areas.
 
 The plant typically reaches a height of 2 to 6 feet (60 to 180 cm) and has a branching, erect stem that is often tinged with red or purple. The leaves of lamb's quarters are alternate, triangular to diamond-shaped, and have a distinct grey-green color. The leaf margins are often toothed or lobed, giving them a slightly jagged appearance. The plant derives its common name, lamb's quarters, from the similarity of the leaves to those of the herbaceous plant known as lamb's lettuce.
 
@@ -49,42 +50,43 @@ From an herbalist's perspective, lamb's quarters does not have a long history of
 
 It is important to note that while lamb's quarters is generally regarded as safe for consumption, it is essential to correctly identify the plant and ensure it is harvested from a clean and pesticide-free area. Additionally, individuals with known allergies to plants in the Amaranthaceae family, such as spinach or beets, should exercise caution when consuming lamb's quarters.
 
-In summary, lamb's quarters (Chenopodium berlandieri) is a versatile and nutritious wild plant that is widely distributed in North America. It has triangular to diamond-shaped leaves, a white powdery coating, and inconspicuous green flowers. Lamb's quarters is appreciated as a wild edible due to its high nutritional content and can be used in various culinary preparations. While not traditionally used for specific medicinal purposes, its nutrient-rich profile contributes to its potential health benefits. As always, proper identification and caution should be exercised when foraging and consuming wild plants.`
-	},
-	{
-		id: 'ground-ivy',
-		classification: {
-			family: 'Lamiaceae',
-			genus: 'Glechoma',
-			species: 'G. hederacea'
-		},
-		name: 'Ground Ivy',
-		otherNames: [
-			'creeping charlie',
-			'gill-over-the-ground',
-			'alehoof',
-			'tunhoof',
-			'catsfoot',
-			'field balm'
-		],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy-2.webP',
-				caption: 'Test 2'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy-3.webP',
-				caption: 'Test 3'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lat=%2036.633162&sub=3026&lng=-96.064453&subjectnumber=&map=distribution',
-		description: `Ground ivy, scientifically known as Glechoma hederacea, is a creeping perennial herbaceous plant that belongs to the mint family, Lamiaceae. It is also commonly referred to as creeping Charlie, cat's foot, alehoof, or gill-over-the-ground. With its low-growing and mat-forming habit, ground ivy often spreads rapidly and covers large areas of the ground.
+In summary, lamb's quarters (Chenopodium berlandieri) is a versatile and nutritious wild plant that is widely distributed in North America. It has triangular to diamond-shaped leaves, a white powdery coating, and inconspicuous green flowers. Lamb's quarters is appreciated as a wild edible due to its high nutritional content and can be used in various culinary preparations. While not traditionally used for specific medicinal purposes, its nutrient-rich profile contributes to its potential health benefits. As always, proper identification and caution should be exercised when foraging and consuming wild plants.`,
+  },
+  {
+    id: "ground-ivy",
+    classification: {
+      family: "Lamiaceae",
+      genus: "Glechoma",
+      species: "G. hederacea",
+    },
+    name: "Ground Ivy",
+    otherNames: [
+      "creeping charlie",
+      "gill-over-the-ground",
+      "alehoof",
+      "tunhoof",
+      "catsfoot",
+      "field balm",
+    ],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy-2.webP",
+        caption: "Test 2",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/ground-ivy-3.webP",
+        caption: "Test 3",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lat=%2036.633162&sub=3026&lng=-96.064453&subjectnumber=&map=distribution",
+    description: `Ground ivy, scientifically known as Glechoma hederacea, is a creeping perennial herbaceous plant that belongs to the mint family, Lamiaceae. It is also commonly referred to as creeping Charlie, cat's foot, alehoof, or gill-over-the-ground. With its low-growing and mat-forming habit, ground ivy often spreads rapidly and covers large areas of the ground.
 
 The plant typically has square stems, a characteristic feature of the mint family, and grows close to the ground, rarely exceeding a height of 6 to 12 inches (15 to 30 cm). The leaves of ground ivy are round or kidney-shaped, with scalloped edges and a deep green color. They are arranged opposite each other along the stems and emit a mild, pleasant fragrance when crushed.
 
@@ -98,37 +100,38 @@ Furthermore, ground ivy has been used topically as a poultice or ointment for sk
 
 As with any herbal remedy, it is important to exercise caution and consult with a knowledgeable practitioner before using ground ivy for medicinal purposes. While it has a history of traditional use, scientific research on its effectiveness and safety is limited. Additionally, individuals with known allergies or sensitivities to plants in the mint family should avoid using ground ivy.
 
-In summary, ground ivy (Glechoma hederacea) is a low-growing perennial herb with square stems, round or kidney-shaped leaves, and bluish-purple flowers. It is valued for its medicinal properties and has historically been used for respiratory issues and topical applications. However, it is important to gather reliable information and seek professional advice before utilizing ground ivy for its potential health benefits.`
-	},
-	{
-		id: 'bird-vetch',
-		classification: {
-			family: 'Fabaceae',
-			subFamily: 'Fabeae',
-			tribe: 'Vicieae',
-			genus: 'Vicia',
-			species: 'V. cracca'
-		},
-		name: 'Bird Vetch',
-		otherNames: ['Tufted Vetch', 'Cow Vetch', 'Blue Vetch', 'Boreal Vetch'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch_3.webP',
-				caption: 'Test 2'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch_4.webP',
-				caption: 'Test 3'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&lat=%2036.633162&zoom=4&lng=-96.064453&subjectnumber=&sub=13109',
-		description: `Bird vetch, scientifically known as Vicia cracca, is a flowering perennial plant that belongs to the Fabaceae family, which is the pea family. It is also commonly referred to as tufted vetch or cow vetch. Bird vetch is native to Europe and Asia but has naturalized in many other parts of the world, including North America.
+In summary, ground ivy (Glechoma hederacea) is a low-growing perennial herb with square stems, round or kidney-shaped leaves, and bluish-purple flowers. It is valued for its medicinal properties and has historically been used for respiratory issues and topical applications. However, it is important to gather reliable information and seek professional advice before utilizing ground ivy for its potential health benefits.`,
+  },
+  {
+    id: "bird-vetch",
+    classification: {
+      family: "Fabaceae",
+      subFamily: "Fabeae",
+      tribe: "Vicieae",
+      genus: "Vicia",
+      species: "V. cracca",
+    },
+    name: "Bird Vetch",
+    otherNames: ["Tufted Vetch", "Cow Vetch", "Blue Vetch", "Boreal Vetch"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch_3.webP",
+        caption: "Test 2",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/bird_vetch_4.webP",
+        caption: "Test 3",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&lat=%2036.633162&zoom=4&lng=-96.064453&subjectnumber=&sub=13109",
+    description: `Bird vetch, scientifically known as Vicia cracca, is a flowering perennial plant that belongs to the Fabaceae family, which is the pea family. It is also commonly referred to as tufted vetch or cow vetch. Bird vetch is native to Europe and Asia but has naturalized in many other parts of the world, including North America.
 
 The plant typically grows upright, reaching heights of 2 to 4 feet (60 to 120 cm). It has a slender, climbing or sprawling habit, with long, twining stems that help it attach to and climb on surrounding vegetation or structures. The leaves of bird vetch are pinnately compound, consisting of multiple pairs of small, lance-shaped leaflets. The leaflets are arranged oppositely along the stem and give the plant a delicate and fern-like appearance.
 
@@ -140,28 +143,29 @@ While bird vetch is primarily considered a wild plant and not extensively utiliz
 
 From an ecological perspective, bird vetch can be both beneficial and problematic. As a legume, it has the ability to fix nitrogen in the soil, contributing to soil fertility. It also serves as a valuable source of forage for certain wildlife species, including birds and rabbits. However, bird vetch can also exhibit invasive tendencies in some regions, spreading rapidly and outcompeting native plant species. Therefore, it is crucial to consider its potential impact on local ecosystems before introducing it into new areas.
 
-In summary, bird vetch (Vicia cracca) is a flowering perennial plant with climbing or sprawling stems, pinnately compound leaves, and clusters of violet-blue pea-like flowers. While not extensively used for medicinal or culinary purposes, it has historical associations with diuretic and respiratory properties. Bird vetch can provide ecological benefits but may also exhibit invasive tendencies in certain regions. As with any wild plant, it is important to be mindful of its potential impact and consult reliable resources or experts when considering its use or introduction.`
-	},
-	{
-		id: 'black-medic',
-		classification: {
-			family: 'Fabaceae',
-			subFamily: 'Faboideae',
-			genus: 'Medicago',
-			species: 'M. lupulina'
-		},
-		name: 'Black Medic',
-		otherNames: ['Black Medick', 'Hop Clover', 'Yellow Trefoil'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/black_medic.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/black_medic.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&sub=6005&lng=-96.064453&zoom=4&map=distribution&lat=%2036.633162',
-		description: `Black medic, scientifically known as Medicago lupulina, is a flowering annual plant that belongs to the Fabaceae family, which is the pea family. It is also commonly referred to as hop clover or black medick. Black medic is native to Europe and Asia but has naturalized in various parts of North America and other regions around the world.
+In summary, bird vetch (Vicia cracca) is a flowering perennial plant with climbing or sprawling stems, pinnately compound leaves, and clusters of violet-blue pea-like flowers. While not extensively used for medicinal or culinary purposes, it has historical associations with diuretic and respiratory properties. Bird vetch can provide ecological benefits but may also exhibit invasive tendencies in certain regions. As with any wild plant, it is important to be mindful of its potential impact and consult reliable resources or experts when considering its use or introduction.`,
+  },
+  {
+    id: "black-medic",
+    classification: {
+      family: "Fabaceae",
+      subFamily: "Faboideae",
+      genus: "Medicago",
+      species: "M. lupulina",
+    },
+    name: "Black Medic",
+    otherNames: ["Black Medick", "Hop Clover", "Yellow Trefoil"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/black_medic.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/black_medic.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&sub=6005&lng=-96.064453&zoom=4&map=distribution&lat=%2036.633162",
+    description: `Black medic, scientifically known as Medicago lupulina, is a flowering annual plant that belongs to the Fabaceae family, which is the pea family. It is also commonly referred to as hop clover or black medick. Black medic is native to Europe and Asia but has naturalized in various parts of North America and other regions around the world.
 
 The plant typically grows low to the ground, reaching heights of 6 to 18 inches (15 to 45 cm). It has a spreading habit, with branching stems that often form dense mats or patches. The leaves of black medic are composed of three leaflets, arranged alternately along the stems. The leaflets are oval-shaped with toothed margins, giving them a distinctive appearance. The leaves are typically bright green in color and have a soft texture.
 
@@ -175,35 +179,35 @@ From an ecological perspective, black medic can play a beneficial role in the ec
 
 However, black medic is often considered a weed in lawns, gardens, and agricultural fields. Its ability to spread rapidly and form dense mats can be problematic, particularly in areas where it competes with desired plants for resources. It is important to implement appropriate management strategies if black medic becomes invasive in a particular area.
 
-In summary, black medic (Medicago lupulina) is a low-growing annual plant with spreading stems, three-leaflet leaves, and small, yellow flower clusters. While not extensively used for medicinal or culinary purposes, it has historical associations with diuretic properties. Black medic can provide ecological benefits but can also become invasive in certain contexts. As with any wild plant, it is important to understand its characteristics and potential impact before managing or utilizing it.`
-	},
-	{
-		id: 'burdock',
-		classification: {
-			family: 'Asteraceae',
-			genus: 'Arctium',
-			species: 'A. lappa'
-		},
-		name: 'Burdock',
-		otherNames: ['Beggar’s Buttons', 'Lappa', 'Thorny Burr'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/burdock.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/burdock.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/burdock_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/burdock_3.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lng=-96.064453&lat=%2036.633162&subjectnumber=&sub=27053&map=distribution',
-		description: `Arctium lappa, commonly known as burdock, is a biennial herbaceous plant that belongs to the Asteraceae family. It is native to Europe and has naturalized in various regions around the world. Burdock is well-known for its distinctive appearance and has been used for both culinary and medicinal purposes.
+In summary, black medic (Medicago lupulina) is a low-growing annual plant with spreading stems, three-leaflet leaves, and small, yellow flower clusters. While not extensively used for medicinal or culinary purposes, it has historical associations with diuretic properties. Black medic can provide ecological benefits but can also become invasive in certain contexts. As with any wild plant, it is important to understand its characteristics and potential impact before managing or utilizing it.`,
+  },
+  {
+    id: "burdock",
+    classification: {
+      family: "Asteraceae",
+      genus: "Arctium",
+      species: "A. lappa",
+    },
+    name: "Burdock",
+    otherNames: ["Beggar’s Buttons", "Lappa", "Thorny Burr"],
+    image: "https://herb-codex.us-east-1.linodeobjects.com/images/burdock.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/burdock.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/burdock_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/burdock_3.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lng=-96.064453&lat=%2036.633162&subjectnumber=&sub=27053&map=distribution",
+    description: `Arctium lappa, commonly known as burdock, is a biennial herbaceous plant that belongs to the Asteraceae family. It is native to Europe and has naturalized in various regions around the world. Burdock is well-known for its distinctive appearance and has been used for both culinary and medicinal purposes.
 
 Burdock is a robust plant that can grow up to 6 feet (2 meters) in height. It has large, heart-shaped leaves that are rough to the touch and can measure up to 2 feet (60 centimeters) in length. The plant produces tall, sturdy stems with multiple branches. Burdock blooms in the second year, producing clusters of small, purple or pink flowers that develop into burr-like seed heads. These seed heads have hooked bristles that easily attach to clothing or animal fur, aiding in seed dispersal.
 
@@ -219,35 +223,36 @@ In culinary practices, burdock is often used as a vegetable. The young leaves an
 
 It is important to note that while burdock is generally considered safe for most individuals when used appropriately, some people may experience allergic reactions to the plant. As with any herbal remedy or wild plant, it is recommended to exercise caution, properly identify burdock, and consult with a qualified healthcare practitioner or herbalist before using it, especially if you have any known allergies or are taking medications.
 
-In summary, burdock (Arctium lappa) is a biennial herbaceous plant known for its potential medicinal and culinary uses. The root of burdock is valued for its support of liver health, promotion of healthy skin, and diuretic properties. Burdock root can be incorporated into culinary preparations, and the young leaves and stems can be consumed as a vegetable. As always, seeking professional advice and using caution when using wild plants is advisable.`
-	},
-	{
-		id: 'shepherds-purse',
-		classification: {
-			family: 'Brassicaceae',
-			genus: 'Capsella',
-			species: 'C. bursa-pastoris'
-		},
-		name: "Shepherd's Purse",
-		otherNames: [],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse_3.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&sub=5222&subjectnumber=&lat=%2036.633162&lng=-96.064453&zoom=4',
-		description: `Shepherd's purse, scientifically known as Capsella bursa-pastoris, is a small annual plant that belongs to the Brassicaceae family, which is the mustard family. It is also commonly referred to as lady's purse, mother's heart, or pickpocket. Shepherd's purse is native to Europe and has naturalized in many other parts of the world, including North America.
+In summary, burdock (Arctium lappa) is a biennial herbaceous plant known for its potential medicinal and culinary uses. The root of burdock is valued for its support of liver health, promotion of healthy skin, and diuretic properties. Burdock root can be incorporated into culinary preparations, and the young leaves and stems can be consumed as a vegetable. As always, seeking professional advice and using caution when using wild plants is advisable.`,
+  },
+  {
+    id: "shepherds-purse",
+    classification: {
+      family: "Brassicaceae",
+      genus: "Capsella",
+      species: "C. bursa-pastoris",
+    },
+    name: "Shepherd's Purse",
+    otherNames: [],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/shepherds_purse_3.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&sub=5222&subjectnumber=&lat=%2036.633162&lng=-96.064453&zoom=4",
+    description: `Shepherd's purse, scientifically known as Capsella bursa-pastoris, is a small annual plant that belongs to the Brassicaceae family, which is the mustard family. It is also commonly referred to as lady's purse, mother's heart, or pickpocket. Shepherd's purse is native to Europe and has naturalized in many other parts of the world, including North America.
 
 The plant typically grows in low, compact rosettes with deeply lobed, toothed leaves. The leaves of shepherd's purse are somewhat reminiscent of a purse or heart shape, which contributes to its common names. The leaves are generally hairless and have a slightly wavy or serrated edge. They grow in a basal rosette, meaning they emerge from a central point near the ground.
 
@@ -261,31 +266,31 @@ Furthermore, shepherd's purse has been employed as a traditional diuretic and a 
 
 It is important to note that while shepherd's purse has a history of traditional use, scientific research on its effectiveness and safety is limited. As with any herbal remedy, it is advisable to consult with a knowledgeable practitioner before using shepherd's purse for medicinal purposes, especially if you have any underlying health conditions or are taking other medications.
 
-In summary, shepherd's purse (Capsella bursa-pastoris) is a small annual plant with deeply lobed leaves and white flowers arranged in clusters. It has a history of traditional use in herbal medicine, particularly for its astringent and hemostatic properties. Shepherd's purse has been utilized for wound healing, managing menstrual irregularities, and as a diuretic. However, it is recommended to seek professional advice and exercise caution when using any herbal remedy.`
-	},
-	{
-		id: 'catnip',
-		classification: {
-			family: 'Lamiaceae',
-			genus: 'Nepeta',
-			species: 'N. cataria'
-		},
-		name: 'Catnip',
-		otherNames: ['Catmint', 'Catswort', 'Catwort', 'Field Balm'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/catnip.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/catnip.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/catnip_2.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&sub=6078&zoom=4&lat=%2036.633162&lng=-96.064453&subjectnumber=',
-		description: `Catnip, scientifically known as Nepeta cataria, is a perennial herbaceous plant that belongs to the Lamiaceae family, which is the mint family. Catnip is renowned for its unique effects on cats, but it also possesses several properties that make it valuable in herbal medicine and other applications.
+In summary, shepherd's purse (Capsella bursa-pastoris) is a small annual plant with deeply lobed leaves and white flowers arranged in clusters. It has a history of traditional use in herbal medicine, particularly for its astringent and hemostatic properties. Shepherd's purse has been utilized for wound healing, managing menstrual irregularities, and as a diuretic. However, it is recommended to seek professional advice and exercise caution when using any herbal remedy.`,
+  },
+  {
+    id: "catnip",
+    classification: {
+      family: "Lamiaceae",
+      genus: "Nepeta",
+      species: "N. cataria",
+    },
+    name: "Catnip",
+    otherNames: ["Catmint", "Catswort", "Catwort", "Field Balm"],
+    image: "https://herb-codex.us-east-1.linodeobjects.com/images/catnip.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/catnip.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/catnip_2.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&sub=6078&zoom=4&lat=%2036.633162&lng=-96.064453&subjectnumber=",
+    description: `Catnip, scientifically known as Nepeta cataria, is a perennial herbaceous plant that belongs to the Lamiaceae family, which is the mint family. Catnip is renowned for its unique effects on cats, but it also possesses several properties that make it valuable in herbal medicine and other applications.
 
 Catnip typically grows up to 3 feet (90 centimeters) in height and has square stems, a characteristic feature of the mint family. The plant produces opposite, heart-shaped leaves with serrated edges. The leaves are covered in fine hairs and have a gray-green color. When crushed, the leaves emit a strong, aromatic fragrance that is attractive to cats and often has a minty or lemony scent to humans.
 
@@ -299,39 +304,39 @@ Beyond its medicinal applications, catnip has various practical uses. It can be 
 
 It's worth noting that while catnip is generally safe for cats and humans, individual sensitivities and allergies can occur. Additionally, the effects of catnip on cats can vary, and not all cats respond to it in the same way.
 		
-In summary, catnip (Nepeta cataria) is a perennial herb with square stems, heart-shaped leaves, and clusters of tubular flowers. It is renowned for its effects on cats but also possesses medicinal properties as a relaxant and nervine. Catnip is used to promote relaxation, relieve anxiety, and support sleep. It is also employed in gardening and can be used to make toys for cats. As with any herbal remedy, it's important to consider individual sensitivities and consult with a knowledgeable practitioner when incorporating catnip into your health routine.`
-	},
-	{
-		id: 'clover',
-		classification: {
-			family: 'Fabaceae',
-			genus: 'Trifolium',
-			species: 'T. repens'
-		},
-		name: 'Clover',
-		otherNames: [],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/clover.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/clover.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/clover_close.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/clover_white.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/clover_white_2.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lng=-96.064453&zoom=4&lat=%2036.633162&sub=6557&map=distribution&subjectnumber=',
-		description: `Clover, scientifically known as Trifolium repens, is a perennial flowering plant that belongs to the Fabaceae family, which is the pea family. It is a widely recognized and abundant wild plant found in various regions around the world. Clover is known for its trifoliate leaves, meaning each leaf is divided into three leaflets.
+In summary, catnip (Nepeta cataria) is a perennial herb with square stems, heart-shaped leaves, and clusters of tubular flowers. It is renowned for its effects on cats but also possesses medicinal properties as a relaxant and nervine. Catnip is used to promote relaxation, relieve anxiety, and support sleep. It is also employed in gardening and can be used to make toys for cats. As with any herbal remedy, it's important to consider individual sensitivities and consult with a knowledgeable practitioner when incorporating catnip into your health routine.`,
+  },
+  {
+    id: "clover",
+    classification: {
+      family: "Fabaceae",
+      genus: "Trifolium",
+      species: "T. repens",
+    },
+    name: "Clover",
+    otherNames: [],
+    image: "https://herb-codex.us-east-1.linodeobjects.com/images/clover.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/clover.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/clover_close.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/clover_white.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/clover_white_2.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lng=-96.064453&zoom=4&lat=%2036.633162&sub=6557&map=distribution&subjectnumber=",
+    description: `Clover, scientifically known as Trifolium repens, is a perennial flowering plant that belongs to the Fabaceae family, which is the pea family. It is a widely recognized and abundant wild plant found in various regions around the world. Clover is known for its trifoliate leaves, meaning each leaf is divided into three leaflets.
 
 The plant typically forms low-growing, spreading clumps with creeping stems that root at the nodes. The leaves of clover are alternate and arranged on long petioles. Each leaf consists of three leaflets, each of which is usually oval or heart-shaped, with a characteristic v-shaped white or pale mark on the upper surface. The leaflets can vary in size and have serrated edges.
 
@@ -345,41 +350,42 @@ Clover has been used traditionally as a mild diuretic, as well as for its potent
 
 It is important to note that while clover is generally safe for consumption, some individuals may have allergies to certain species of clover or may experience digestive discomfort if consumed in large quantities. Additionally, it is crucial to correctly identify the species of clover being used, as some species can have toxic or undesirable effects.
 
-In summary, clover (Trifolium repens) is a perennial plant with trifoliate leaves and round flower heads. It is recognized for its ability to fix nitrogen in the soil and its potential health benefits. Clover has traditional uses as a diuretic and for cardiovascular support. It is important to exercise caution, consider individual sensitivities, and ensure proper identification when using clover for medicinal or culinary purposes.`
-	},
-	{
-		id: 'dandelion',
-		classification: {
-			family: 'Asteraceae',
-			genus: 'Taraxacum',
-			species: 'T. officinale'
-		},
-		name: 'Dandelion',
-		otherNames: [
-			'Blowball',
-			'Cankerwort',
-			'Lion’s Tooth',
-			'Piss-a-bed',
-			'Priest’s Crown',
-			'Puffball',
-			'Swine Snout',
-			'White Endive',
-			'Wild Endive'
-		],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/dandillion.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dandillion.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dandillion_2.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lng=-96.064453&sub=3887&lat=%2036.633162&subjectnumber=&map=distribution',
-		description: `Dandelion, scientifically known as Taraxacum officinale, is a perennial herbaceous plant that belongs to the Asteraceae family, which is the daisy family. It is a well-known and widespread wild plant found in many regions around the world. Dandelion is recognized for its distinctive yellow flowers that turn into white, fluffy seed heads commonly referred to as "blowballs" or "dandelion clocks."
+In summary, clover (Trifolium repens) is a perennial plant with trifoliate leaves and round flower heads. It is recognized for its ability to fix nitrogen in the soil and its potential health benefits. Clover has traditional uses as a diuretic and for cardiovascular support. It is important to exercise caution, consider individual sensitivities, and ensure proper identification when using clover for medicinal or culinary purposes.`,
+  },
+  {
+    id: "dandelion",
+    classification: {
+      family: "Asteraceae",
+      genus: "Taraxacum",
+      species: "T. officinale",
+    },
+    name: "Dandelion",
+    otherNames: [
+      "Blowball",
+      "Cankerwort",
+      "Lion’s Tooth",
+      "Piss-a-bed",
+      "Priest’s Crown",
+      "Puffball",
+      "Swine Snout",
+      "White Endive",
+      "Wild Endive",
+    ],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/dandillion.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dandillion.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dandillion_2.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lng=-96.064453&sub=3887&lat=%2036.633162&subjectnumber=&map=distribution",
+    description: `Dandelion, scientifically known as Taraxacum officinale, is a perennial herbaceous plant that belongs to the Asteraceae family, which is the daisy family. It is a well-known and widespread wild plant found in many regions around the world. Dandelion is recognized for its distinctive yellow flowers that turn into white, fluffy seed heads commonly referred to as "blowballs" or "dandelion clocks."
 
 The plant typically grows low to the ground, with a rosette of deeply toothed leaves that radiate from a central taproot. The leaves of dandelion are long and narrow, with deep lobes that resemble the teeth of a lion, giving rise to its common name. The leaves are hairless and have a dark green color.
 
@@ -397,47 +403,47 @@ In traditional herbal medicine, dandelion has been used to support various aspec
 
 It is worth noting that while dandelion is generally safe for consumption, individuals with specific medical conditions or those taking certain medications should exercise caution and consult with a healthcare professional before incorporating dandelion into their health routine.
 
-In summary, dandelion (Taraxacum officinale) is a perennial herbaceous plant with deeply toothed leaves and yellow flowers that transform into fluffy white seed heads. It is valued for its medicinal and nutritional properties, with the leaves and roots utilized in herbal preparations. Dandelion is known for its diuretic, liver-stimulating, and digestive properties. As with any herbal remedy or wild plant, it is essential to consider individual sensitivities and seek professional advice when using`
-	},
-	{
-		id: 'dock',
-		classification: {
-			family: 'Polygonaceae',
-			genus: 'Rumex',
-			species: 'R. crispus'
-		},
-		name: 'Dock',
-		otherNames: ['Curly Dock', 'Yellow Dock'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/dock.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dock.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dock_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dock_3.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dock_4.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dock_5.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dock_red.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&lat=%2036.633162&lng=-96.064453&zoom=4&subjectnumber=&sub=6335',
-		description: `Dock, scientifically known as Rumex crispus, is a perennial herbaceous plant that belongs to the Polygonaceae family. It is a common and widespread wild plant found in many regions around the world. Dock is recognized for its tall stature, lance-shaped leaves, and long, slender flower spikes.
+In summary, dandelion (Taraxacum officinale) is a perennial herbaceous plant with deeply toothed leaves and yellow flowers that transform into fluffy white seed heads. It is valued for its medicinal and nutritional properties, with the leaves and roots utilized in herbal preparations. Dandelion is known for its diuretic, liver-stimulating, and digestive properties. As with any herbal remedy or wild plant, it is essential to consider individual sensitivities and seek professional advice when using`,
+  },
+  {
+    id: "dock",
+    classification: {
+      family: "Polygonaceae",
+      genus: "Rumex",
+      species: "R. crispus",
+    },
+    name: "Dock",
+    otherNames: ["Curly Dock", "Yellow Dock"],
+    image: "https://herb-codex.us-east-1.linodeobjects.com/images/dock.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dock.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dock_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dock_3.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dock_4.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dock_5.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dock_red.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&lat=%2036.633162&lng=-96.064453&zoom=4&subjectnumber=&sub=6335",
+    description: `Dock, scientifically known as Rumex crispus, is a perennial herbaceous plant that belongs to the Polygonaceae family. It is a common and widespread wild plant found in many regions around the world. Dock is recognized for its tall stature, lance-shaped leaves, and long, slender flower spikes.
 
 The plant typically grows upright, reaching heights of 2 to 4 feet (60 to 120 centimeters). Dock has a deep taproot that allows it to withstand drought conditions and grow in various soil types. The leaves of dock are elongated, narrow, and have distinctive wavy or curly edges, giving rise to its specific epithet "crispus," meaning curled.
 
@@ -455,29 +461,29 @@ It is important to note that while dock has a history of traditional use, scient
 
 As with any herbal remedy, it is advisable to consult with a knowledgeable practitioner before using dock for medicinal purposes, especially if you have any underlying health conditions or are taking other medications.
 
-In summary, dock (Rumex crispus) is a perennial herbaceous plant with lance-shaped leaves and tall flower spikes. It has a history of traditional use in herbal medicine, particularly for its potential digestive and topical benefits. Dock root is employed as a bitter digestive tonic, while dock leaves can be consumed as a culinary ingredient and used topically to support skin health. As with any herbal remedy, it is important to exercise caution, seek professional advice, and ensure correct identification when using dock for medicinal or culinary purposes.`
-	},
-	{
-		id: 'dogwood',
-		classification: {
-			family: 'Cornaceae',
-			genus: 'Cornus',
-			species: 'C. florida'
-		},
-		name: 'Dogwood',
-		otherNames: [],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/dogwood.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dogwood.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/dogwood_2.webP',
-				caption: 'Test'
-			}
-		],
-		description: `Dogwood, scientifically known as Cornus florida, is a deciduous tree that belongs to the Cornaceae family. It is a native tree to eastern and central parts of North America and is well-known for its beautiful springtime blossoms and vibrant fall foliage. Dogwood is valued for its ornamental qualities, ecological importance, and potential medicinal uses.
+In summary, dock (Rumex crispus) is a perennial herbaceous plant with lance-shaped leaves and tall flower spikes. It has a history of traditional use in herbal medicine, particularly for its potential digestive and topical benefits. Dock root is employed as a bitter digestive tonic, while dock leaves can be consumed as a culinary ingredient and used topically to support skin health. As with any herbal remedy, it is important to exercise caution, seek professional advice, and ensure correct identification when using dock for medicinal or culinary purposes.`,
+  },
+  {
+    id: "dogwood",
+    classification: {
+      family: "Cornaceae",
+      genus: "Cornus",
+      species: "C. florida",
+    },
+    name: "Dogwood",
+    otherNames: [],
+    image: "https://herb-codex.us-east-1.linodeobjects.com/images/dogwood.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dogwood.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/dogwood_2.webP",
+        caption: "Test",
+      },
+    ],
+    description: `Dogwood, scientifically known as Cornus florida, is a deciduous tree that belongs to the Cornaceae family. It is a native tree to eastern and central parts of North America and is well-known for its beautiful springtime blossoms and vibrant fall foliage. Dogwood is valued for its ornamental qualities, ecological importance, and potential medicinal uses.
 
 Dogwood trees typically reach heights of 20 to 40 feet (6 to 12 meters) and have a spreading crown with a rounded or flat-topped shape. The bark of mature trees is grayish-brown and develops distinctive ridges and furrows. The leaves are opposite, simple, and oval-shaped, with prominent veins. They turn various shades of red, orange, or purple in the autumn, adding to the tree's visual appeal.
 
@@ -491,31 +497,32 @@ The inner bark of dogwood was traditionally used to make infusions or poultices 
 
 While dogwood has a history of traditional use, scientific research on its medicinal properties is limited. As with any herbal remedy, it is important to consult with a knowledgeable practitioner or healthcare professional before using dogwood for medicinal purposes.
 
-In summary, dogwood (Cornus florida) is a deciduous tree known for its showy spring flowers, attractive autumn foliage, and small fruit. It has both ornamental and potential medicinal value. Dogwood bark, leaves, and roots have been traditionally used for their potential astringent, antipyretic, and analgesic properties. As with any herbal remedy, it is important to seek professional advice and ensure proper identification before using dogwood for medicinal purposes.`
-	},
-	{
-		id: 'false-dandelion',
-		classification: {
-			family: 'Asteraceae',
-			genus: 'Hypochaeris',
-			species: 'H. radicata'
-		},
-		name: 'False Dandelion',
-		otherNames: ['Flatweed', 'Catsear', 'Hawkweed'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/false_dandelion.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/false_dandelion.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/false_dandelion_2.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=5740&lng=-96.064453&lat=%2036.633162&map=distribution&subjectnumber=&zoom=4',
-		description: `False dandelion, scientifically known as Hypochaeris radicata, is a perennial herbaceous plant that belongs to the Asteraceae family, similar to the common dandelion (Taraxacum officinale). It is often referred to as false dandelion because of its resemblance to the true dandelion in appearance, particularly its yellow flowers and dandelion-like seed heads.
+In summary, dogwood (Cornus florida) is a deciduous tree known for its showy spring flowers, attractive autumn foliage, and small fruit. It has both ornamental and potential medicinal value. Dogwood bark, leaves, and roots have been traditionally used for their potential astringent, antipyretic, and analgesic properties. As with any herbal remedy, it is important to seek professional advice and ensure proper identification before using dogwood for medicinal purposes.`,
+  },
+  {
+    id: "false-dandelion",
+    classification: {
+      family: "Asteraceae",
+      genus: "Hypochaeris",
+      species: "H. radicata",
+    },
+    name: "False Dandelion",
+    otherNames: ["Flatweed", "Catsear", "Hawkweed"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/false_dandelion.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/false_dandelion.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/false_dandelion_2.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=5740&lng=-96.064453&lat=%2036.633162&map=distribution&subjectnumber=&zoom=4",
+    description: `False dandelion, scientifically known as Hypochaeris radicata, is a perennial herbaceous plant that belongs to the Asteraceae family, similar to the common dandelion (Taraxacum officinale). It is often referred to as false dandelion because of its resemblance to the true dandelion in appearance, particularly its yellow flowers and dandelion-like seed heads.
 
 False dandelion typically grows in open fields, lawns, and disturbed areas, and it is native to Europe but has been naturalized in various regions around the world. The plant forms a rosette of basal leaves with a deep taproot. The leaves are lance-shaped, toothed, and often covered with fine hairs. The plant produces a tall, leafless stalk topped with a single yellow flower head.
 
@@ -529,27 +536,28 @@ The leaves of false dandelion can be used similarly to true dandelion leaves. Th
 
 It is important to note that false dandelion may not be as extensively studied or recognized for its medicinal properties as true dandelion. As with any wild plant or herbal remedy, it is crucial to exercise caution, properly identify the plant, and consult with a knowledgeable practitioner or healthcare professional before using false dandelion for medicinal purposes.
 
-In summary, false dandelion (Hypochaeris radicata) is a perennial herbaceous plant that resembles the true dandelion but has some distinct differences in leaf shape, flower stalk, and seed head structure. False dandelion is believed to possess similar bitter and digestive properties to true dandelion, although it is not as commonly used in herbal preparations. As with any herbal remedy, it is important to seek professional advice and ensure correct identification when using false dandelion for medicinal or culinary purposes.`
-	},
-	{
-		id: 'field-penny-cress',
-		classification: {
-			family: 'Brassicaceae',
-			genus: 'Thlaspi',
-			species: 'T. arvense'
-		},
-		name: 'Field Pennycress',
-		otherNames: ['Frenchweed', 'Stinkweed'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/field_penny_cress.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/field_penny_cress.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=6524&lng=-96.064453&lat=%2036.633162&zoom=4&map=distribution&subjectnumber=',
-		description: `Thlaspi arvense, commonly known as Field Pennycress, is an annual flowering plant that belongs to the Brassicaceae family. It is native to Eurasia but has naturalized in many parts of North America. Field Pennycress is often considered a weed and can be found in fields, disturbed areas, and along roadsides.
+In summary, false dandelion (Hypochaeris radicata) is a perennial herbaceous plant that resembles the true dandelion but has some distinct differences in leaf shape, flower stalk, and seed head structure. False dandelion is believed to possess similar bitter and digestive properties to true dandelion, although it is not as commonly used in herbal preparations. As with any herbal remedy, it is important to seek professional advice and ensure correct identification when using false dandelion for medicinal or culinary purposes.`,
+  },
+  {
+    id: "field-penny-cress",
+    classification: {
+      family: "Brassicaceae",
+      genus: "Thlaspi",
+      species: "T. arvense",
+    },
+    name: "Field Pennycress",
+    otherNames: ["Frenchweed", "Stinkweed"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/field_penny_cress.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/field_penny_cress.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=6524&lng=-96.064453&lat=%2036.633162&zoom=4&map=distribution&subjectnumber=",
+    description: `Thlaspi arvense, commonly known as Field Pennycress, is an annual flowering plant that belongs to the Brassicaceae family. It is native to Eurasia but has naturalized in many parts of North America. Field Pennycress is often considered a weed and can be found in fields, disturbed areas, and along roadsides.
 
 Field Pennycress is a small plant that typically grows to a height of 1 to 2 feet (30 to 60 centimeters). It has smooth, branching stems with alternate, lance-shaped leaves that are toothed or lobed. The plant produces clusters of small, four-petaled white flowers that develop into flattened, disc-shaped seed pods. These seed pods are coin-shaped and have a distinct penny-like appearance, hence the common name "Pennycress."
 
@@ -559,41 +567,46 @@ In agriculture, Field Pennycress is being explored as a cover crop, particularly
 
 While Field Pennycress is generally considered safe, it is not widely used in herbal medicine or culinary practices. It is important to exercise caution when using wild plants and to consult with a knowledgeable herbalist or professional before attempting to use them for any specific purpose.
 
-In summary, Field Pennycress (Thlaspi arvense) is an annual flowering plant that is often considered a weed. It has lance-shaped leaves, small white flowers, and distinctive coin-shaped seed pods. While it is not commonly used for culinary or medicinal purposes, Field Pennycress has potential ecological and agricultural benefits such as phytoremediation and as a cover crop. As always, it is advisable to seek professional advice and exercise caution when using wild plants for any purpose.`
-	},
-	{
-		id: 'fleabane',
-		classification: {
-			family: 'Asteraceae',
-			genus: 'Erigeron',
-			species: 'E. annuus'
-		},
-		name: 'Fleabane',
-		otherNames: ['Daisy Fleabane', 'Eastern Daisy Fleabane', 'Philadelphia Fleabane'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/fleabane.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/fleabane.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_3.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_4.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_5.webP',
-				caption: 'Test'
-			}
-		],
-		description: `Fleabane, scientifically known as Erigeron annuus, is a flowering plant that belongs to the Asteraceae family. It is native to North America and can be found in various regions across the continent. Fleabane is a common wild plant that often grows in open fields, meadows, roadsides, and disturbed areas.
+In summary, Field Pennycress (Thlaspi arvense) is an annual flowering plant that is often considered a weed. It has lance-shaped leaves, small white flowers, and distinctive coin-shaped seed pods. While it is not commonly used for culinary or medicinal purposes, Field Pennycress has potential ecological and agricultural benefits such as phytoremediation and as a cover crop. As always, it is advisable to seek professional advice and exercise caution when using wild plants for any purpose.`,
+  },
+  {
+    id: "fleabane",
+    classification: {
+      family: "Asteraceae",
+      genus: "Erigeron",
+      species: "E. annuus",
+    },
+    name: "Fleabane",
+    otherNames: [
+      "Daisy Fleabane",
+      "Eastern Daisy Fleabane",
+      "Philadelphia Fleabane",
+    ],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/fleabane.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/fleabane.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_3.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_4.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/fleabane_5.webP",
+        caption: "Test",
+      },
+    ],
+    description: `Fleabane, scientifically known as Erigeron annuus, is a flowering plant that belongs to the Asteraceae family. It is native to North America and can be found in various regions across the continent. Fleabane is a common wild plant that often grows in open fields, meadows, roadsides, and disturbed areas.
 
 Fleabane is an annual or biennial herb that typically reaches heights between 1 and 3 feet (30 to 90 centimeters). It has an erect stem with branches that bear numerous small flowers. The leaves are lance-shaped or oblong, and they are covered in fine hairs, giving them a somewhat fuzzy or hairy appearance.
 
@@ -605,36 +618,37 @@ In traditional herbal medicine, fleabane has been used to address various health
 
 It is important to note that scientific research on the medicinal properties of fleabane is limited, and it is always advisable to consult with a qualified healthcare practitioner or herbalist before using any plant for medicinal purposes.
 
-In summary, fleabane (Erigeron annuus) is a wild plant with daisy-like flowers that can be found in open fields and disturbed areas. While not extensively used in herbal medicine, it has been employed for its potential astringent and diuretic properties. Fleabane has traditionally been used topically to address skin conditions, but further research is needed to fully understand its potential benefits. As with any herbal remedy, it is important to seek professional advice and exercise caution when using fleabane for medicinal purposes.`
-	},
-	{
-		id: 'horsetail',
-		classification: {
-			family: 'Equisetaceae',
-			genus: 'Equisetum',
-			species: 'E. arvense'
-		},
-		name: 'Horsetail',
-		otherNames: [
-			'Field Horsetail',
-			'Common Horsetail',
-			'Snake Grass',
-			'Pewterwort',
-			'Scouring Rush',
-			'Shavegrass'
-		],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/horsetail.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/horsetail.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/horsetail_2.webP',
-				caption: 'Test'
-			}
-		],
-		description: `Horsetail, scientifically known as Equisetum arvense, is a unique and ancient perennial plant that belongs to the Equisetaceae family. It is a primitive plant that has been around for millions of years and is often referred to as a living fossil. Horsetail is widely distributed and can be found in various regions around the world, including North America, Europe, and Asia.
+In summary, fleabane (Erigeron annuus) is a wild plant with daisy-like flowers that can be found in open fields and disturbed areas. While not extensively used in herbal medicine, it has been employed for its potential astringent and diuretic properties. Fleabane has traditionally been used topically to address skin conditions, but further research is needed to fully understand its potential benefits. As with any herbal remedy, it is important to seek professional advice and exercise caution when using fleabane for medicinal purposes.`,
+  },
+  {
+    id: "horsetail",
+    classification: {
+      family: "Equisetaceae",
+      genus: "Equisetum",
+      species: "E. arvense",
+    },
+    name: "Horsetail",
+    otherNames: [
+      "Field Horsetail",
+      "Common Horsetail",
+      "Snake Grass",
+      "Pewterwort",
+      "Scouring Rush",
+      "Shavegrass",
+    ],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/horsetail.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/horsetail.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/horsetail_2.webP",
+        caption: "Test",
+      },
+    ],
+    description: `Horsetail, scientifically known as Equisetum arvense, is a unique and ancient perennial plant that belongs to the Equisetaceae family. It is a primitive plant that has been around for millions of years and is often referred to as a living fossil. Horsetail is widely distributed and can be found in various regions around the world, including North America, Europe, and Asia.
 
 Horsetail is characterized by its distinct appearance. It has a hollow, jointed stem that resembles a horse's tail or a bottle brush, which gives rise to its common name. The stem is segmented, with each segment having a ring of tiny, scale-like leaves. The plant does not produce flowers but reproduces through spores.
 
@@ -650,55 +664,56 @@ It is important to note that horsetail should be used with caution and under the
 
 Additionally, due to its high silica content, horsetail should not be used by individuals with kidney disorders or conditions that affect mineral balance in the body.
 
-In summary, horsetail (Equisetum arvense) is a unique perennial plant known for its distinct appearance and potential health benefits. It has a long history of traditional use and is valued for its high silica content, which supports healthy skin, hair, and nails. Horsetail also has diuretic properties and may assist with urinary tract health. However, it should be used with caution and under professional guidance due to its potential effects on thiamine levels and its contraindications in certain conditions.`
-	},
-	{
-		id: 'motherwort',
-		classification: {
-			family: 'Lamiaceae',
-			genus: 'Leonurus',
-			species: 'L. cardiaca'
-		},
-		name: 'Motherwort',
-		otherNames: ['Lion’s Ear', 'Lion’s Tail', 'Throwwort'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_3.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_4.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_5.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_6.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_7.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_leaf.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lat=%2036.633162&sub=5923&lng=-96.064453&subjectnumber=&map=distribution&zoom=4',
-		description: `Motherwort, scientifically known as Leonurus cardiaca, is an herbaceous perennial plant that belongs to the Lamiaceae family. It is native to Europe and central Asia but has naturalized in various regions around the world. Motherwort has a long history of traditional use and is highly regarded for its potential medicinal properties.
+In summary, horsetail (Equisetum arvense) is a unique perennial plant known for its distinct appearance and potential health benefits. It has a long history of traditional use and is valued for its high silica content, which supports healthy skin, hair, and nails. Horsetail also has diuretic properties and may assist with urinary tract health. However, it should be used with caution and under professional guidance due to its potential effects on thiamine levels and its contraindications in certain conditions.`,
+  },
+  {
+    id: "motherwort",
+    classification: {
+      family: "Lamiaceae",
+      genus: "Leonurus",
+      species: "L. cardiaca",
+    },
+    name: "Motherwort",
+    otherNames: ["Lion’s Ear", "Lion’s Tail", "Throwwort"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_3.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_4.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_5.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_6.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_7.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/motherwort_leaf.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lat=%2036.633162&sub=5923&lng=-96.064453&subjectnumber=&map=distribution&zoom=4",
+    description: `Motherwort, scientifically known as Leonurus cardiaca, is an herbaceous perennial plant that belongs to the Lamiaceae family. It is native to Europe and central Asia but has naturalized in various regions around the world. Motherwort has a long history of traditional use and is highly regarded for its potential medicinal properties.
 
 Motherwort gets its name from its historical use in supporting women's health, particularly during childbirth and menstruation. The plant has a square stem with deeply lobed, palmate leaves that resemble the shape of a lion's heart, which is how it acquired its scientific name "Leonurus," meaning "lion's tail."
 
@@ -712,27 +727,33 @@ Furthermore, motherwort is known for its potential benefits for women's health. 
 
 As with any herbal remedy, it is important to consult with a qualified healthcare practitioner or herbalist before using motherwort, especially during pregnancy or while taking any medications.
 
-In summary, motherwort (Leonurus cardiaca) is an herbaceous perennial plant known for its calming and relaxing properties. It has been traditionally used to support the nervous system, promote cardiovascular health, and provide benefits for women's health. Motherwort is valued for its ability to promote relaxation during times of stress and tension, support heart health, and assist with menstrual discomfort. As with any herbal remedy, professional advice and guidance should be sought before using motherwort for medicinal purposes.`
-	},
-	{
-		id: 'plantain',
-		classification: {
-			family: 'Plantaginaceae',
-			genus: 'Plantago',
-			species: 'P. major'
-		},
-		name: 'Plantain',
-		otherNames: ['Broadleaf Plantain', 'Common Plantain', 'Greater Plantain', 'White Man’s Foot'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/plantain.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/plantain.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&sub=6201&lng=-96.064453&zoom=4&map=distribution&lat=%2036.633162',
-		description: `Plantago major, commonly known as plantain, is a perennial herbaceous plant that belongs to the Plantaginaceae family. It is not to be confused with the banana-like fruit also known as plantain. Plantain is a versatile and widespread plant that can be found in many regions around the world, including Europe, Asia, and North America. It thrives in various habitats, including lawns, meadows, roadsides, and disturbed areas.
+In summary, motherwort (Leonurus cardiaca) is an herbaceous perennial plant known for its calming and relaxing properties. It has been traditionally used to support the nervous system, promote cardiovascular health, and provide benefits for women's health. Motherwort is valued for its ability to promote relaxation during times of stress and tension, support heart health, and assist with menstrual discomfort. As with any herbal remedy, professional advice and guidance should be sought before using motherwort for medicinal purposes.`,
+  },
+  {
+    id: "plantain",
+    classification: {
+      family: "Plantaginaceae",
+      genus: "Plantago",
+      species: "P. major",
+    },
+    name: "Plantain",
+    otherNames: [
+      "Broadleaf Plantain",
+      "Common Plantain",
+      "Greater Plantain",
+      "White Man’s Foot",
+    ],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/plantain.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/plantain.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&sub=6201&lng=-96.064453&zoom=4&map=distribution&lat=%2036.633162",
+    description: `Plantago major, commonly known as plantain, is a perennial herbaceous plant that belongs to the Plantaginaceae family. It is not to be confused with the banana-like fruit also known as plantain. Plantain is a versatile and widespread plant that can be found in many regions around the world, including Europe, Asia, and North America. It thrives in various habitats, including lawns, meadows, roadsides, and disturbed areas.
 
 Plantain has a basal rosette growth habit, meaning the leaves emerge from a central point near the ground. The leaves of plantain are oval-shaped, with prominent parallel veins that give them a ribbed appearance. They are typically dark green but may have a reddish tinge. The plant produces tall, slender flower spikes that rise above the leaves. The flowers are small, inconspicuous, and often greenish or whitish in color.
 
@@ -748,31 +769,32 @@ In addition to its medicinal uses, plantain leaves are edible and can be incorpo
 
 It's important to note that while plantain is generally considered safe for most individuals, some people may be allergic to the plant. As with any herbal remedy, it is recommended to consult with a qualified healthcare practitioner or herbalist before using plantain, particularly if you have any known allergies or are taking medications.
 
-In summary, plantain (Plantago major) is a versatile and widespread herbaceous plant known for its medicinal properties. It has been traditionally used to soothe respiratory conditions, promote healthy skin, and support digestion. Plantain leaves can be prepared as teas, used topically for skin irritations, or incorporated into culinary preparations. As always, seeking professional advice is recommended before using plantain for medicinal purposes.`
-	},
-	{
-		id: 'raspberry',
-		classification: {
-			family: 'Rosaceae',
-			genus: 'Rubus',
-			species: 'R. idaeus'
-		},
-		name: 'Raspberry',
-		otherNames: [],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/raspberry.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/raspberry.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/raspberry_leaf.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&zoom=4&sub=9857&lng=-96.064453&map=distribution&lat=%2036.633162',
-		description: `Raspberry, scientifically known as Rubus idaeus, is a deciduous shrub belonging to the Rosaceae family. It is a widely cultivated plant known for its delicious and nutritious fruits. Raspberry is native to Europe and Asia but is now cultivated in various parts of the world, including North America.
+In summary, plantain (Plantago major) is a versatile and widespread herbaceous plant known for its medicinal properties. It has been traditionally used to soothe respiratory conditions, promote healthy skin, and support digestion. Plantain leaves can be prepared as teas, used topically for skin irritations, or incorporated into culinary preparations. As always, seeking professional advice is recommended before using plantain for medicinal purposes.`,
+  },
+  {
+    id: "raspberry",
+    classification: {
+      family: "Rosaceae",
+      genus: "Rubus",
+      species: "R. idaeus",
+    },
+    name: "Raspberry",
+    otherNames: [],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/raspberry.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/raspberry.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/raspberry_leaf.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&zoom=4&sub=9857&lng=-96.064453&map=distribution&lat=%2036.633162",
+    description: `Raspberry, scientifically known as Rubus idaeus, is a deciduous shrub belonging to the Rosaceae family. It is a widely cultivated plant known for its delicious and nutritious fruits. Raspberry is native to Europe and Asia but is now cultivated in various parts of the world, including North America.
 
 Raspberry plants typically grow in thickets or patches and can reach heights of 3 to 6 feet (about 1 to 2 meters). They have woody stems with thorns, and the leaves are green, serrated, and composed of three to five leaflets. The plant produces delicate white flowers with five petals that give way to the vibrant red or purple berries we commonly associate with raspberries.
 
@@ -788,47 +810,48 @@ Furthermore, raspberry leaves contain antioxidants that help protect cells from 
 
 It's important to note that while raspberry leaf is generally considered safe for most individuals, pregnant women should consult with their healthcare provider before using it, especially if they have a history of preterm labor or other pregnancy-related complications.
 
-In summary, raspberry (Rubus idaeus) is a cultivated shrub known for its delicious and nutritious fruits. The berries are rich in vitamins, minerals, antioxidants, and dietary fiber. Raspberry leaves are also used in herbal medicine and have been traditionally used to support women's health, promote digestive wellness, and provide antioxidant benefits. As always, it is advisable to seek professional advice before using raspberry leaf for medicinal purposes, particularly during pregnancy.`
-	},
-	{
-		id: 'st-johns-wort',
-		classification: {
-			family: 'Hypericaceae',
-			genus: 'Hypericum',
-			species: 'H. perforatum'
-		},
-		name: 'St. John’s Wort',
-		otherNames: ['Goatweed', 'Klamath Weed', 'Rosin Rose', 'Tipton Weed'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort.webP',
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&map=distribution&lng=-96.064453&lat=%2036.633162&subjectnumber=&sub=4411',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_3.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_4.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_5.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_6.webP',
-				caption: 'Test'
-			}
-		],
-		description: `St. John's Wort, scientifically known as Hypericum perforatum, is a perennial herbaceous plant that belongs to the Hypericaceae family. It is native to Europe but has naturalized in various regions around the world. St. John's Wort is highly valued in herbal medicine for its potential therapeutic properties.
+In summary, raspberry (Rubus idaeus) is a cultivated shrub known for its delicious and nutritious fruits. The berries are rich in vitamins, minerals, antioxidants, and dietary fiber. Raspberry leaves are also used in herbal medicine and have been traditionally used to support women's health, promote digestive wellness, and provide antioxidant benefits. As always, it is advisable to seek professional advice before using raspberry leaf for medicinal purposes, particularly during pregnancy.`,
+  },
+  {
+    id: "st-johns-wort",
+    classification: {
+      family: "Hypericaceae",
+      genus: "Hypericum",
+      species: "H. perforatum",
+    },
+    name: "St. John’s Wort",
+    otherNames: ["Goatweed", "Klamath Weed", "Rosin Rose", "Tipton Weed"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort.webP",
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&map=distribution&lng=-96.064453&lat=%2036.633162&subjectnumber=&sub=4411",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_3.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_4.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_5.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/st_johns_wort_6.webP",
+        caption: "Test",
+      },
+    ],
+    description: `St. John's Wort, scientifically known as Hypericum perforatum, is a perennial herbaceous plant that belongs to the Hypericaceae family. It is native to Europe but has naturalized in various regions around the world. St. John's Wort is highly valued in herbal medicine for its potential therapeutic properties.
 
 St. John's Wort is a hardy plant that grows up to 1 meter in height. It has multiple branches with opposite, oblong leaves that are dotted with tiny translucent glands. The leaves appear perforated when held up to light, which gives rise to its scientific name "perforatum." The plant produces bright yellow flowers with distinctive petals and numerous stamens.
 
@@ -842,47 +865,54 @@ It's important to note that St. John's Wort may interact with certain medication
 
 Furthermore, St. John's Wort may increase photosensitivity in some individuals, making the skin more sensitive to sunlight. It is advisable to use sun protection measures and avoid excessive sun exposure when using St. John's Wort.
 
-In summary, St. John's Wort (Hypericum perforatum) is a perennial herb known for its potential mood-enhancing properties. It has been traditionally used to support emotional well-being and promote a positive mood. St. John's Wort is also valued for its potential nerve-relaxing and analgesic effects. However, it is essential to exercise caution and consult with a healthcare practitioner before using St. John's Wort, particularly if you are taking any medications.`
-	},
-	{
-		id: 'stinging-nettle',
-		classification: {
-			family: 'Urticaceae',
-			genus: 'Urtica',
-			species: 'U. dioica'
-		},
-		name: 'Stinging Nettle',
-		otherNames: ['Common Nettle', 'Nettle', 'Brennessel', 'Burning Nettle', 'Hemp Nettle'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_1.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_1.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_3.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_4.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_5.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_6.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lng=-96.064453&map=distribution&lat=%2036.633162&zoom=4&subjectnumber=&sub=6569',
-		description: `Stinging nettle, scientifically known as Urtica dioica, is a perennial herbaceous plant that belongs to the Urticaceae family. It is native to Europe, Asia, and North Africa but can now be found in temperate regions worldwide. Stinging nettle is a well-known plant with a long history of traditional use for various medicinal and culinary purposes.
+In summary, St. John's Wort (Hypericum perforatum) is a perennial herb known for its potential mood-enhancing properties. It has been traditionally used to support emotional well-being and promote a positive mood. St. John's Wort is also valued for its potential nerve-relaxing and analgesic effects. However, it is essential to exercise caution and consult with a healthcare practitioner before using St. John's Wort, particularly if you are taking any medications.`,
+  },
+  {
+    id: "stinging-nettle",
+    classification: {
+      family: "Urticaceae",
+      genus: "Urtica",
+      species: "U. dioica",
+    },
+    name: "Stinging Nettle",
+    otherNames: [
+      "Common Nettle",
+      "Nettle",
+      "Brennessel",
+      "Burning Nettle",
+      "Hemp Nettle",
+    ],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_1.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_1.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_3.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_4.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_5.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/stinging_nettle_6.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lng=-96.064453&map=distribution&lat=%2036.633162&zoom=4&subjectnumber=&sub=6569",
+    description: `Stinging nettle, scientifically known as Urtica dioica, is a perennial herbaceous plant that belongs to the Urticaceae family. It is native to Europe, Asia, and North Africa but can now be found in temperate regions worldwide. Stinging nettle is a well-known plant with a long history of traditional use for various medicinal and culinary purposes.
 
 Stinging nettle gets its name from the fine hairs on its leaves and stems that contain formic acid and other irritants. When these hairs come into contact with the skin, they can cause a stinging sensation and temporary discomfort. However, when properly handled and processed, stinging nettle can be used safely and has many potential health benefits.
 
@@ -900,33 +930,33 @@ In addition to its medicinal uses, stinging nettle is also a nutritious edible p
 
 It's important to note that while stinging nettle is generally considered safe for most individuals when used properly, it may cause allergic reactions in some people. It is advisable to wear gloves and exercise caution when handling fresh nettle leaves to avoid the stinging sensation. If you are allergic to plants in the Urticaceae family or have known allergies, it is recommended to consult with a healthcare practitioner before using stinging nettle.
 
-In summary, stinging nettle (Urtica dioica) is a perennial herb known for its potential medicinal and nutritional properties. It has been traditionally used to support kidney and urinary system health, reduce inflammation, and soothe skin irritations. Stinging nettle is also a nutritious edible plant. As with any herbal remedy, it is advisable to seek professional advice and exercise caution, particularly if you have known allergies or are taking any medications.`
-	},
-	{
-		id: 'sumac',
-		classification: {
-			family: 'Anacardiaceae',
-			genus: 'Rhus',
-			species: 'R. typhina'
-		},
-		name: 'Sumac',
-		otherNames: ['Staghorn Sumac', 'Velvet Sumac'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/sumac.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/sumac.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/sumac_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/sumac_3.webP',
-				caption: 'Test'
-			}
-		],
-		description: `Rhus typhina, commonly known as sumac, is a deciduous shrub or small tree that belongs to the Anacardiaceae family. It is native to North America and is known for its unique and distinctive appearance. Sumac is highly valued for its culinary uses, medicinal properties, and ornamental value.
+In summary, stinging nettle (Urtica dioica) is a perennial herb known for its potential medicinal and nutritional properties. It has been traditionally used to support kidney and urinary system health, reduce inflammation, and soothe skin irritations. Stinging nettle is also a nutritious edible plant. As with any herbal remedy, it is advisable to seek professional advice and exercise caution, particularly if you have known allergies or are taking any medications.`,
+  },
+  {
+    id: "sumac",
+    classification: {
+      family: "Anacardiaceae",
+      genus: "Rhus",
+      species: "R. typhina",
+    },
+    name: "Sumac",
+    otherNames: ["Staghorn Sumac", "Velvet Sumac"],
+    image: "https://herb-codex.us-east-1.linodeobjects.com/images/sumac.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/sumac.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/sumac_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/sumac_3.webP",
+        caption: "Test",
+      },
+    ],
+    description: `Rhus typhina, commonly known as sumac, is a deciduous shrub or small tree that belongs to the Anacardiaceae family. It is native to North America and is known for its unique and distinctive appearance. Sumac is highly valued for its culinary uses, medicinal properties, and ornamental value.
 
 Sumac typically grows to a height of 10 to 20 feet (3 to 6 meters) and has an open, spreading growth habit. The plant has compound leaves that consist of several pairs of leaflets, usually with a terminal leaflet. The leaflets are elongated and serrated, giving them a feathery or fern-like appearance. In the fall, sumac foliage often turns brilliant shades of red, orange, or purple, adding beauty to the landscape.
 
@@ -940,49 +970,49 @@ Furthermore, sumac has been used as a topical remedy for skin conditions. The le
 
 It's important to note that while sumac is generally considered safe for culinary use and topical applications, some individuals may have sensitivities or allergies to the plant. It is recommended to exercise caution and perform a patch test before applying sumac to the skin. Additionally, not all sumac species are edible, so it's essential to identify and use the appropriate species for culinary purposes.
 
-In summary, sumac (Rhus typhina) is a deciduous shrub known for its distinctive appearance, culinary uses, and potential medicinal properties. The plant produces tart, red berries that can be used as a spice in cooking. Sumac has been traditionally used to support digestion and soothe skin irritations. As with any herbal remedy or wild plant, it is advisable to exercise caution, perform proper identification, and seek professional advice if needed.`
-	},
-	{
-		id: 'thistle',
-		classification: {
-			family: 'Asteraceae',
-			genus: 'Cirsium',
-			species: 'C. vulgare'
-		},
-		name: 'Thistle',
-		otherNames: [
-			'Bull Thistle',
-			'Common Thistle',
-			'Hard Thistle',
-			'Hardheads',
-			'Hare Thistle',
-			'Hercules Thistle',
-			'Hock About',
-			'Horse Thistle',
-			'Milk Thistle',
-			'Nodding Thistle',
-			'Plume Thistle'
-		],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/thistle.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/thistle.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/thistle_2.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/thistle_3.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/thistle_stem.webP',
-				caption: 'Test'
-			}
-		],
-		description: `Cirsium vulgare, commonly known as thistle, is a biennial or perennial herbaceous plant that belongs to the Asteraceae family. Thistles are widespread and can be found in various regions around the world, including Europe, Asia, and North America. While thistles are often considered as invasive weeds, they have been historically used for their medicinal properties and culinary purposes.
+In summary, sumac (Rhus typhina) is a deciduous shrub known for its distinctive appearance, culinary uses, and potential medicinal properties. The plant produces tart, red berries that can be used as a spice in cooking. Sumac has been traditionally used to support digestion and soothe skin irritations. As with any herbal remedy or wild plant, it is advisable to exercise caution, perform proper identification, and seek professional advice if needed.`,
+  },
+  {
+    id: "thistle",
+    classification: {
+      family: "Asteraceae",
+      genus: "Cirsium",
+      species: "C. vulgare",
+    },
+    name: "Thistle",
+    otherNames: [
+      "Bull Thistle",
+      "Common Thistle",
+      "Hard Thistle",
+      "Hardheads",
+      "Hare Thistle",
+      "Hercules Thistle",
+      "Hock About",
+      "Horse Thistle",
+      "Milk Thistle",
+      "Nodding Thistle",
+      "Plume Thistle",
+    ],
+    image: "https://herb-codex.us-east-1.linodeobjects.com/images/thistle.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/thistle.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/thistle_2.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/thistle_3.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/thistle_stem.webP",
+        caption: "Test",
+      },
+    ],
+    description: `Cirsium vulgare, commonly known as thistle, is a biennial or perennial herbaceous plant that belongs to the Asteraceae family. Thistles are widespread and can be found in various regions around the world, including Europe, Asia, and North America. While thistles are often considered as invasive weeds, they have been historically used for their medicinal properties and culinary purposes.
 
 Thistles are characterized by their prickly stems, leaves, and flowering heads. They typically grow tall, reaching heights of 2 to 5 feet (about 0.6 to 1.5 meters). The stems are rigid and often covered with sharp spines or prickles. The leaves are deeply lobed and have sharp, toothed edges. Thistles produce beautiful, spiky flower heads that are composed of numerous small flowers. The flowers can vary in color, ranging from purple and pink to white.
 
@@ -996,31 +1026,32 @@ In terms of culinary uses, thistle has a history of use in traditional cuisines.
 
 However, it is important to note that not all thistle species are edible, and proper identification is crucial to avoid any potential risks or confusion with toxic plants.
 
-In summary, thistle (Cirsium vulgare) is a prickly herbaceous plant known for its potential medicinal properties and culinary uses. Thistles have been historically used for their diuretic, detoxifying, and liver-supportive effects. Some thistle species have been used topically to soothe skin irritations, while certain edible thistle parts can be incorporated into culinary preparations. As always, it is advisable to exercise caution, properly identify thistle species, and seek professional advice before using thistle for medicinal or culinary purposes.`
-	},
-	{
-		id: 'wild-carrot',
-		classification: {
-			family: 'Apiaceae',
-			genus: 'Daucus',
-			species: 'D. carota'
-		},
-		name: 'Wild Carrot',
-		otherNames: ['Bird’s Nest', 'Bishop’s Lace', 'Queen Anne’s Lace'],
-		image: 'https://herb-codex.us-east-1.linodeobjects.com/images/wild_carrot.webP',
-		gallery: [
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/wild_carrot.webP',
-				caption: 'Test'
-			},
-			{
-				src: 'https://herb-codex.us-east-1.linodeobjects.com/images/wild_carrot_2.webP',
-				caption: 'Test'
-			}
-		],
-		mapUrl:
-			'https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=5514&subjectnumber=&lat=%2036.633162&lng=-96.064453&zoom=4&map=distribution',
-		description: `Daucus carota, commonly known as wild carrot or Queen Anne's lace, is a biennial or perennial flowering plant that belongs to the Apiaceae family. It is native to Europe and parts of Asia but has naturalized in many other regions around the world. Wild carrot is well-known for its delicate, lacy white flowers and its resemblance to its domesticated relative, the carrot.
+In summary, thistle (Cirsium vulgare) is a prickly herbaceous plant known for its potential medicinal properties and culinary uses. Thistles have been historically used for their diuretic, detoxifying, and liver-supportive effects. Some thistle species have been used topically to soothe skin irritations, while certain edible thistle parts can be incorporated into culinary preparations. As always, it is advisable to exercise caution, properly identify thistle species, and seek professional advice before using thistle for medicinal or culinary purposes.`,
+  },
+  {
+    id: "wild-carrot",
+    classification: {
+      family: "Apiaceae",
+      genus: "Daucus",
+      species: "D. carota",
+    },
+    name: "Wild Carrot",
+    otherNames: ["Bird’s Nest", "Bishop’s Lace", "Queen Anne’s Lace"],
+    image:
+      "https://herb-codex.us-east-1.linodeobjects.com/images/wild_carrot.webP",
+    gallery: [
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/wild_carrot.webP",
+        caption: "Test",
+      },
+      {
+        src: "https://herb-codex.us-east-1.linodeobjects.com/images/wild_carrot_2.webP",
+        caption: "Test",
+      },
+    ],
+    mapUrl:
+      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=5514&subjectnumber=&lat=%2036.633162&lng=-96.064453&zoom=4&map=distribution",
+    description: `Daucus carota, commonly known as wild carrot or Queen Anne's lace, is a biennial or perennial flowering plant that belongs to the Apiaceae family. It is native to Europe and parts of Asia but has naturalized in many other regions around the world. Wild carrot is well-known for its delicate, lacy white flowers and its resemblance to its domesticated relative, the carrot.
 
 Wild carrot plants can grow up to 3 feet (1 meter) in height and have slender, hairy stems. The leaves are finely divided and feathery, similar to fern leaves. The plant produces clusters of small white flowers that form a flat, umbrella-shaped inflorescence. In the center of the flower cluster, there is often a single purple or dark red flower, which is sometimes referred to as a "drop of blood."
 
@@ -1040,6 +1071,6 @@ It is worth noting that wild carrot is also a popular plant for attracting benef
 
 While wild carrot is generally considered safe when used properly, it is important to exercise caution and seek professional guidance, particularly if you are pregnant, have specific medical conditions, or are taking medications. Additionally, it is essential to properly identify wild carrot and avoid confusion with other similar-looking plants, as some wild plants can be toxic.
 
-In summary, wild carrot (Daucus carota) is a flowering plant with delicate white flowers and a slender, woody taproot. It has a history of culinary and medicinal uses, including support for urinary system health and women's health. Wild carrot leaves are edible when young, and the plant can attract pollinators to the garden. As with any herbal remedy or wild plant, it is advisable to exercise caution, properly identify the plant, and seek professional advice when necessary.`
-	}
+In summary, wild carrot (Daucus carota) is a flowering plant with delicate white flowers and a slender, woody taproot. It has a history of culinary and medicinal uses, including support for urinary system health and women's health. Wild carrot leaves are edible when young, and the plant can attract pollinators to the garden. As with any herbal remedy or wild plant, it is advisable to exercise caution, properly identify the plant, and seek professional advice when necessary.`,
+  },
 ];

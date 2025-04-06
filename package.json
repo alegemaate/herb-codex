@@ -1,36 +1,32 @@
 {
-	"name": "herb-codex",
-	"version": "0.0.1",
-	"license": "UNLICENSED",
-	"type": "module",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"test": "playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@fontsource/jockey-one": "^5.0.4",
-		"@fontsource/merriweather": "^5.0.4",
-		"@playwright/test": "^1.28.1",
-		"@sveltejs/adapter-vercel": "^3.0.1",
-		"@sveltejs/kit": "^1.5.0",
-		"@typescript-eslint/eslint-plugin": "^6.0.0",
-		"@typescript-eslint/parser": "^6.0.0",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.26.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.8.1",
-		"svelte": "^4.0.0",
-		"svelte-check": "^3.0.1",
-		"typescript": "^5.0.0",
-		"vite": "^4.3.0",
-		"vitest": "^0.33.0"
-	}
+  "name": "herb-codex",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write .",
+    "prepare": "svelte-kit sync"
+  },
+  "devDependencies": {
+    "@fontsource/jockey-one": "^5.0.4",
+    "@fontsource/merriweather": "^5.0.4",
+    "@foxd-io/eslint-config-foxd": "^0.0.8",
+    "@playwright/test": "^1.28.1",
+    "@sveltejs/adapter-static": "^3.0.8",
+    "@sveltejs/kit": "^2.20.4",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "eslint": "^9.24.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-svelte": "^3.3.3",
+    "svelte": "^5.25.7",
+    "svelte-check": "^4.1.5",
+    "typescript": "^5.0.0",
+    "vite": "^6.2.5"
+  }
 }

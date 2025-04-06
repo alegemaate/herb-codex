@@ -1,20 +1,23 @@
 <script>
-	import { SITE_CONSTANTS } from '$lib/constants';
+  import { SITE_CONSTANTS } from "$lib/constants";
 </script>
 
 <svelte:head>
-	<title>Home | HerbCodex</title>
-	<meta name="description" content="HerbCodex targets to document common plants and their uses." />
-	<link rel="canonical" href={SITE_CONSTANTS.SITE_URL} />
+  <title>Home | HerbCodex</title>
+  <meta
+    name="description"
+    content="HerbCodex targets to document common plants and their uses."
+  />
+  <link rel="canonical" href={SITE_CONSTANTS.SITE_URL} />
 </svelte:head>
 
 <section>
-	<h1>HerbCodex</h1>
+  <h1>HerbCodex</h1>
 
-	<p>Documenting information about useful and not so useful herbs.</p>
+  <p>Documenting information about useful and not so useful herbs.</p>
 
-	<hr />
+  <hr />
 
-	<p><a href="/plants">View all plants</a></p>
-	<p><a href="/classifications">View all classifications</a></p>
+  <p><a href="/plants/">View all plants</a></p>
+  <p><a href="/classifications/">View all classifications</a></p>
 </section>
