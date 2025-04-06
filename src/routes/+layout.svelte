@@ -37,6 +37,7 @@
         >Allan Legemaate</a
       >
     </p>
+    <a href="https://www.foxd.io/" target="_blank"> Powered by Foxd.io </a>
   </footer>
 </div>
 
