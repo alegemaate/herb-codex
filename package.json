@@ -19,7 +19,7 @@
     "@foxd-io/eslint-config-foxd": "^0.0.8",
     "@playwright/test": "^1.28.1",
     "@sveltejs/adapter-static": "^3.0.8",
-    "@sveltejs/kit": "^2.20.4",
+    "@sveltejs/kit": "^2.70.2",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "eslint": "^9.24.0",
     "prettier": "^3.5.3",
