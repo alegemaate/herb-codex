@@ -88,8 +88,12 @@ const PLANTS: Omit<Plant, "description">[] = [
       "catsfoot",
       "field balm",
     ],
-    image: `${IMAGE_BASE}/images/ground-ivy.webP`,
+    image: `${IMAGE_BASE}/images/ground_ivy_flowers.webP`,
     gallery: [
+      {
+        src: `${IMAGE_BASE}/images/ground_ivy_flowers.webP`,
+        caption: "Blue-violet flowers in the leaf joints in spring",
+      },
       {
         src: `${IMAGE_BASE}/images/ground-ivy.webP`,
         caption: "Dense mat of rounded, scalloped leaves",
@@ -270,8 +274,16 @@ const PLANTS: Omit<Plant, "description">[] = [
     },
     name: "Catnip",
     otherNames: ["Catmint", "Catswort", "Catwort", "Field Balm"],
-    image: `${IMAGE_BASE}/images/catnip.webP`,
+    image: `${IMAGE_BASE}/images/catnip_bee.webP`,
     gallery: [
+      {
+        src: `${IMAGE_BASE}/images/catnip_bee.webP`,
+        caption: "Honeybee visiting a flower spike",
+      },
+      {
+        src: `${IMAGE_BASE}/images/catnip_flower_spike.webP`,
+        caption: "White flowers with purple spots on a flower spike",
+      },
       {
         src: `${IMAGE_BASE}/images/catnip.webP`,
         caption: "Grey-green, toothed leaves and a flower spike",
@@ -963,6 +975,230 @@ const PLANTS: Omit<Plant, "description">[] = [
     },
     caution:
       "Deadly lookalikes: poison hemlock and water hemlock. Wild carrot has a hairy stem. Poison hemlock has a smooth stem with purple blotches. Do not use the seeds during pregnancy.",
+  },
+  {
+    id: "white-trillium",
+    classification: {
+      family: "Melanthiaceae",
+      genus: "Trillium",
+      species: "T. grandiflorum",
+    },
+    name: "White Trillium",
+    otherNames: [
+      "Large-flowered Trillium",
+      "Great White Trillium",
+      "Wake-robin",
+    ],
+    image: `${IMAGE_BASE}/images/white_trillium.webP`,
+    gallery: [
+      {
+        src: `${IMAGE_BASE}/images/white_trillium.webP`,
+        caption: "Single white flower above a whorl of three leaves",
+      },
+    ],
+    taxonIds: { gbif: 2742283, inaturalist: 55402 },
+    facts: {
+      lifecycle: "perennial",
+      form: "herb",
+      uses: ["wildlife"],
+      edibleParts: [],
+      flowering: [4, 5],
+      native: "Eastern North America",
+      height: "20–45 cm",
+      habitat: ["rich hardwood forests", "shady slopes"],
+    },
+    caution:
+      "Do not pick it. Picking the flower takes the leaves too, which can kill the plant or set it back for years. It is protected in many parks.",
+  },
+  {
+    id: "wild-strawberry",
+    classification: {
+      family: "Rosaceae",
+      genus: "Fragaria",
+      species: "F. virginiana",
+    },
+    name: "Wild Strawberry",
+    otherNames: ["Virginia Strawberry", "Common Strawberry"],
+    image: `${IMAGE_BASE}/images/wild_strawberry.webP`,
+    gallery: [
+      {
+        src: `${IMAGE_BASE}/images/wild_strawberry.webP`,
+        caption: "White flowers and three-part, toothed leaves",
+      },
+      {
+        src: `${IMAGE_BASE}/images/wild_strawberry_2.webP`,
+        caption: "Flower cluster among the leaves",
+      },
+      {
+        src: `${IMAGE_BASE}/images/wild_strawberry_3.webP`,
+        caption: "Cluster of flowers on a reddish stalk",
+      },
+    ],
+    taxonIds: { gbif: 7950792, inaturalist: 77155 },
+    facts: {
+      lifecycle: "perennial",
+      form: "herb",
+      uses: ["food", "tea", "wildlife"],
+      edibleParts: ["fruit", "leaf"],
+      flowering: [4, 5, 6],
+      native: "North America",
+      height: "5–20 cm",
+      habitat: ["fields", "meadows", "woodland edges"],
+    },
+  },
+  {
+    id: "orange-hawkweed",
+    classification: {
+      family: "Asteraceae",
+      genus: "Pilosella",
+      species: "P. aurantiaca",
+    },
+    name: "Orange Hawkweed",
+    otherNames: ["Devil's Paintbrush", "Fox-and-cubs", "Hieracium aurantiacum"],
+    image: `${IMAGE_BASE}/images/orange_hawkweed.webP`,
+    gallery: [
+      {
+        src: `${IMAGE_BASE}/images/orange_hawkweed.webP`,
+        caption: "Bright orange flower heads on a hairy stalk",
+      },
+    ],
+    taxonIds: { gbif: 3122924, inaturalist: 711103 },
+    facts: {
+      lifecycle: "perennial",
+      form: "herb",
+      uses: ["wildlife"],
+      edibleParts: [],
+      flowering: [6, 7, 8],
+      native: "Europe",
+      height: "10–60 cm",
+      habitat: ["fields", "roadsides", "lawns"],
+    },
+  },
+  {
+    id: "yarrow",
+    classification: {
+      family: "Asteraceae",
+      genus: "Achillea",
+      species: "A. millefolium",
+    },
+    name: "Yarrow",
+    otherNames: [
+      "Common Yarrow",
+      "Milfoil",
+      "Soldier's Woundwort",
+      "Nosebleed",
+    ],
+    image: `${IMAGE_BASE}/images/yarrow.webP`,
+    gallery: [
+      {
+        src: `${IMAGE_BASE}/images/yarrow.webP`,
+        caption:
+          "Pink garden form with flat-topped flower clusters and feathery leaves",
+      },
+    ],
+    taxonIds: { gbif: 3120060, inaturalist: 52821 },
+    facts: {
+      lifecycle: "perennial",
+      form: "herb",
+      uses: ["medicinal", "tea", "wildlife"],
+      edibleParts: ["leaf", "flower"],
+      flowering: [6, 7, 8, 9],
+      native: "Northern Hemisphere",
+      height: "30–90 cm",
+      habitat: ["fields", "roadsides", "meadows"],
+    },
+    caution:
+      "Do not use as a medicine during pregnancy. It can cause skin rashes, and allergy in people sensitive to the daisy family. Poison hemlock also has flat white flower clusters, so check the leaves.",
+  },
+  {
+    id: "wild-bergamot",
+    classification: {
+      family: "Lamiaceae",
+      genus: "Monarda",
+      species: "M. fistulosa",
+    },
+    name: "Wild Bergamot",
+    otherNames: ["Bee Balm", "Horsemint"],
+    image: `${IMAGE_BASE}/images/wild_bergamot.webP`,
+    gallery: [
+      {
+        src: `${IMAGE_BASE}/images/wild_bergamot.webP`,
+        caption: "Lavender pompom flowers in a garden bed",
+      },
+    ],
+    taxonIds: { gbif: 5341411, inaturalist: 85320 },
+    facts: {
+      lifecycle: "perennial",
+      form: "herb",
+      uses: ["food", "medicinal", "tea", "wildlife"],
+      edibleParts: ["leaf", "flower"],
+      flowering: [7, 8],
+      native: "North America",
+      height: "60–120 cm",
+      habitat: ["dry meadows", "prairies", "field edges"],
+    },
+    caution:
+      "Use in moderation. The leaves are rich in thymol. Do not use as a medicine during pregnancy.",
+  },
+  {
+    id: "valerian",
+    classification: {
+      family: "Caprifoliaceae",
+      genus: "Valeriana",
+      species: "V. officinalis",
+    },
+    name: "Valerian",
+    otherNames: ["Garden Valerian", "Garden Heliotrope", "All-heal"],
+    image: `${IMAGE_BASE}/images/valerian.webP`,
+    gallery: [
+      {
+        src: `${IMAGE_BASE}/images/valerian.webP`,
+        caption: "Clusters of small white flowers on tall stems",
+      },
+    ],
+    taxonIds: { gbif: 2888763, inaturalist: 56160 },
+    facts: {
+      lifecycle: "perennial",
+      form: "herb",
+      uses: ["medicinal", "tea"],
+      edibleParts: [],
+      flowering: [5, 6, 7],
+      native: "Europe and Asia",
+      height: "1–1.5 m",
+      habitat: ["damp meadows", "ditches", "roadsides"],
+    },
+    caution:
+      "Causes drowsiness. Do not drive after taking it, and do not combine it with alcohol or sleep medicines. Do not use during pregnancy.",
+  },
+  {
+    id: "peppermint",
+    classification: {
+      family: "Lamiaceae",
+      genus: "Mentha",
+      species: "M. × piperita",
+    },
+    name: "Peppermint",
+    otherNames: ["Mint", "Brandy Mint"],
+    image: `${IMAGE_BASE}/images/peppermint.webP`,
+    gallery: [
+      {
+        src: `${IMAGE_BASE}/images/peppermint.webP`,
+        caption: "Dark, toothed leaves on purple stems",
+      },
+    ],
+    taxonIds: { gbif: 8707933, inaturalist: 181525 },
+    facts: {
+      lifecycle: "perennial",
+      form: "herb",
+      uses: ["food", "medicinal", "tea"],
+      edibleParts: ["leaf"],
+      flowering: [7, 8, 9],
+      native: "Europe (a garden hybrid)",
+      height: "30–90 cm",
+      habitat: ["gardens", "stream banks", "wet ground"],
+    },
+    caution:
+      "Can make heartburn worse. Never put peppermint oil on the face or chest of babies and young children, because menthol can affect their breathing.",
   },
 ];
 

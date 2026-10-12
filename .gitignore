@@ -13,3 +13,4 @@ vite.config.ts.timestamp-*
 
 # Local git worktrees (Claude Code)
 .claude/worktrees/
+import/
