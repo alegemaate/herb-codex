@@ -893,15 +893,14 @@ const PLANTS: Omit<Plant, "description">[] = [
       "Edible sumacs have upright, red fruit clusters. Poison sumac has hanging, white berries and grows in wet ground. Do not touch it. People with a cashew or mango allergy can react.",
   },
   {
-    id: "thistle",
+    id: "bull-thistle",
     classification: {
       family: "Asteraceae",
       genus: "Cirsium",
       species: "C. vulgare",
     },
-    name: "Thistle",
+    name: "Bull Thistle",
     otherNames: [
-      "Bull Thistle",
       "Spear Thistle",
       "Common Thistle",
       "Hard Thistle",
@@ -984,6 +983,11 @@ const descriptions = import.meta.glob<string>("./descriptions/*.md", {
   import: "default",
   eager: true,
 });
+
+/** Old plant ids that now redirect to a new id. */
+export const RENAMED_PLANTS: Record<string, string> = {
+  thistle: "bull-thistle",
+};
 
 export const DATA: Plant[] = PLANTS.map((plant) => {
   const description = descriptions[`./descriptions/${plant.id}.md`];
