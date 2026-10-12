@@ -1,0 +1,14 @@
+{
+  "name": "HerbCodex",
+  "short_name": "HerbCodex",
+  "description": "A field guide to common wild plants and their uses.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#020e00",
+  "theme_color": "#15490c",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/favicon.png", "sizes": "128x128", "type": "image/png" }
+  ]
+}

@@ -1,13 +1,45 @@
 @import "@fontsource/merriweather";
+@import "@fontsource/merriweather/700.css";
 @import "@fontsource/jockey-one";
 
 :root {
-  --color-theme-1: #ff3e00;
-  --color-text: rgba(0, 0, 0, 1);
+  --color-theme-1: #c73000;
+  --color-text: #000;
+  --color-muted: #4a5546;
+  --color-surface: #fff;
+  --color-page: #020e00;
+  --color-header: #15490c;
+  --color-nav: #113d0a;
+  --color-placeholder: #ccc;
+  --color-rule: #000;
+  --color-caution-bg: #fff4e0;
+  --color-caution-border: #d98a00;
+  --badge-bg: #e4ecdf;
+  --badge-food-bg: #cfe8c4;
+  --badge-medicinal-bg: #e3d9f2;
+  --badge-text: #1d2a19;
   --border-radius: 0.8rem;
   --max-width: 60rem;
   font-family: Merriweather, serif;
   color: var(--color-text);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-theme-1: #ff8a5c;
+    --color-text: #e4ebdc;
+    --color-muted: #a9b5a3;
+    --color-surface: #0f1c0c;
+    --color-placeholder: #2a3627;
+    --color-rule: #4a5a45;
+    --color-caution-bg: #3a2a08;
+    --color-caution-border: #d98a00;
+    --badge-bg: #26361f;
+    --badge-food-bg: #2d4a24;
+    --badge-medicinal-bg: #3a2f4d;
+    --badge-text: #e4ebdc;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -116,6 +148,21 @@ button:focus:not(:focus-visible) {
 
 hr {
   border: 0;
-  border-top: 0.0625rem solid rgba(0, 0, 0, 1);
+  border-top: 0.0625rem solid var(--color-rule);
   margin: 1rem 0;
+}
+
+@media print {
+  :root {
+    --color-text: #000;
+    --color-surface: #fff;
+    --color-page: #fff;
+    --color-theme-1: #000;
+  }
+
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
 }

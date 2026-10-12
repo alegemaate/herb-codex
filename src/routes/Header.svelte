@@ -1,31 +1,42 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { resolve } from "$app/paths";
+  import { page } from "$app/state";
+
+  const links = [
+    { route: "/", href: resolve("/"), label: "Home" },
+    { route: "/plants", href: resolve("plants/"), label: "Plants" },
+    {
+      route: "/classifications",
+      href: resolve("classifications/"),
+      label: "Classifications",
+    },
+    { route: "/about", href: resolve("about/"), label: "About" },
+  ];
+
+  // Sections also match their child routes, e.g. /plants/[id] marks Plants.
+  const isCurrent = (route: string) => {
+    const id = page.route.id ?? "";
+    return route === "/" ? id === "/" : id.startsWith(route);
+  };
 </script>
 
 <header>
   <section class="header-top">
     <div class="header-inner">
-      <a href="/"> HerbCodex </a>
+      <a href={resolve("/")}> HerbCodex </a>
     </div>
   </section>
   <nav>
     <ul>
-      <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
-        <a href="/">Home</a>
-      </li>
-      <li aria-current={$page.url.pathname === "/plants" ? "page" : undefined}>
-        <a href="/plants/">Plants</a>
-      </li>
-      <li
-        aria-current={$page.url.pathname === "/classifications"
-          ? "page"
-          : undefined}
-      >
-        <a href="/classifications/">Classifications</a>
-      </li>
-      <li aria-current={$page.url.pathname === "/about" ? "page" : undefined}>
-        <a href="/about/">About</a>
-      </li>
+      {#each links as link (link.href)}
+        <li>
+          <a
+            href={link.href}
+            aria-current={isCurrent(link.route) ? "page" : undefined}
+            >{link.label}</a
+          >
+        </li>
+      {/each}
     </ul>
   </nav>
 </header>
@@ -40,7 +51,7 @@
     padding: 1.25rem 0rem;
     justify-content: center;
     align-items: center;
-    background: #15490c;
+    background: var(--color-header);
     color: #fff;
   }
 
@@ -60,7 +71,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.625rem;
-    background-color: #113d0a;
+    background-color: var(--color-nav);
   }
 
   ul {
@@ -83,5 +94,11 @@
 
   a {
     color: #fff;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.15rem solid transparent;
+  }
+
+  a[aria-current="page"] {
+    border-bottom-color: #9fd88f;
   }
 </style>

@@ -1,16 +1,15 @@
 <script lang="ts">
-  import { SITE_CONSTANTS } from "$lib/constants";
-  import { DATA } from "$lib/data";
+  import { DATA } from "#lib/data.js";
+  import PlantCard from "#lib/components/PlantCard.svelte";
+  import Seo from "#lib/components/Seo.svelte";
 </script>
 
-<svelte:head>
-  <title>Plants | HerbCodex</title>
-  <meta
-    name="description"
-    content="Information about useful and not so useful plants."
-  />
-  <link rel="canonical" href={`${SITE_CONSTANTS.SITE_URL}/plants`} />
-</svelte:head>
+<Seo
+  title="Plants"
+  description="Information about useful and not so useful plants."
+  path="/plants/"
+  image={DATA[0].image}
+/>
 
 <div class="text-column">
   <h1>Plants</h1>
@@ -27,18 +26,8 @@
   </p>
 
   <ul class="plant-list">
-    {#each DATA as item, i}
-      <a href="/plants/{item.id}/" class="plant-link">
-        <li class="plant-card">
-          <img
-            src={item.image}
-            alt={item.name}
-            class="plant-card_image"
-            loading={i < 2 ? "eager" : "lazy"}
-          />
-          <h2 class="plant-card_name">{item.name}</h2>
-        </li>
-      </a>
+    {#each DATA as plant, i (plant.id)}
+      <li><PlantCard {plant} eager={i < 2} /></li>
     {/each}
   </ul>
 </div>
@@ -52,19 +41,7 @@
     grid-gap: 1rem;
   }
 
-  .plant-card {
+  .plant-list li {
     margin-bottom: 1rem;
-    width: 100%;
-  }
-
-  .plant-card_image {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-  }
-
-  .plant-card_name {
-    margin-top: 0.5em;
   }
 </style>

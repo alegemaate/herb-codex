@@ -1,5 +1,5 @@
-import { SITE_CONSTANTS } from "$lib/constants";
-import { DATA } from "$lib/data";
+import { SITE_CONSTANTS } from "#lib/constants.js";
+import { DATA } from "#lib/data.js";
 
 const urlTemplateMap = (url: string) => `<url>
   <loc>${SITE_CONSTANTS.SITE_URL}${url}</loc>

@@ -1,6 +1,10 @@
 <script lang="ts">
+  import type { Snippet } from "svelte";
+  import { asset } from "$app/paths";
   import Header from "./Header.svelte";
   import "./styles.css";
+
+  let { children }: { children: Snippet } = $props();
 </script>
 
 <svelte:head>
@@ -22,13 +26,16 @@
   <meta name="msapplication-tooltip" content="HerbCodex" />
   <meta name="msapplication-starturl" content="/" />
   <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="manifest" href={asset("manifest.webmanifest")} />
+  <link rel="apple-touch-icon" href={asset("favicon.png")} />
 </svelte:head>
 
 <div class="app">
   <Header />
 
   <main>
-    <slot />
+    {@render children()}
   </main>
 
   <footer>
@@ -46,8 +53,8 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #020e00;
-    display: inline-flex;
+    min-height: 100dvh;
+    background: var(--color-page);
     align-items: center;
     width: 100%;
   }
@@ -60,9 +67,9 @@
     flex-direction: column;
     align-items: flex-start;
     border-radius: var(--border-radius);
-    background: #fff;
+    background: var(--color-surface);
     box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
-    margin: 1rem 0 6rem 0;
+    margin: 1rem 0;
   }
 
   footer {
@@ -71,11 +78,11 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background: #15490c;
+    background: var(--color-header);
     color: #fff;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    /* Pushes the footer to the bottom of the window on short pages */
+    margin-top: auto;
     box-shadow: 0px -5px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
