@@ -1,4 +1,5 @@
 import { DATA, RENAMED_PLANTS } from "#lib/data.js";
+import { floweringFor } from "#lib/flowering.js";
 import { error, redirect } from "@sveltejs/kit";
 import type { EntryGenerator, PageLoad } from "./$types";
 
@@ -9,14 +10,14 @@ export const load: PageLoad = ({ params }) => {
   }
 
   const plant = DATA.find((d) => d.id === params.id);
-
-  if (plant) {
-    return {
-      plant,
-    };
+  if (!plant) {
+    error(404, "Not found");
   }
 
-  error(404, "Not found");
+  return {
+    plant,
+    flowering: floweringFor(plant.taxonIds.inaturalist),
+  };
 };
 
 // Old ids are not linked from anywhere, so list them for the prerenderer.

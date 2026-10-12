@@ -19,7 +19,8 @@ export interface Plant {
   caution?: string;
   /** Markdown, from `descriptions/<id>.md`. */
   description: string;
-  mapUrl?: string;
+  /** IDs for this species in GBIF and iNaturalist, used for maps and charts. */
+  taxonIds: { gbif: number; inaturalist: number };
 }
 
 export type PlantUse = "food" | "medicinal" | "tea" | "wildlife" | "soil";
@@ -57,8 +58,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Young plant with grey-green, diamond-shaped leaves",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&lat=%2036.633162&sub=5294&zoom=4&map=distribution&lng=-96.064453",
+    taxonIds: { gbif: 3083920, inaturalist: 58879 },
     facts: {
       lifecycle: "annual",
       form: "herb",
@@ -103,8 +103,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Ground ivy covering the ground",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lat=%2036.633162&sub=3026&lng=-96.064453&subjectnumber=&map=distribution",
+    taxonIds: { gbif: 2926557, inaturalist: 55830 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -144,8 +143,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Bird vetch spreading over a field edge",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&lat=%2036.633162&zoom=4&lng=-96.064453&subjectnumber=&sub=13109",
+    taxonIds: { gbif: 2975287, inaturalist: 52471 },
     facts: {
       lifecycle: "perennial",
       form: "vine",
@@ -176,8 +174,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Small yellow flower heads and three-part leaves",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&sub=6005&lng=-96.064453&zoom=4&map=distribution&lat=%2036.633162",
+    taxonIds: { gbif: 2965201, inaturalist: 57056 },
     facts: {
       lifecycle: "annual",
       form: "herb",
@@ -213,8 +210,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Large, wavy-edged leaves",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lng=-96.064453&lat=%2036.633162&subjectnumber=&sub=27053&map=distribution",
+    taxonIds: { gbif: 7353729, inaturalist: 75501 },
     facts: {
       lifecycle: "biennial",
       form: "herb",
@@ -252,8 +248,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Seed stalks with triangular pods",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&sub=5222&subjectnumber=&lat=%2036.633162&lng=-96.064453&zoom=4",
+    taxonIds: { gbif: 5375388, inaturalist: 56121 },
     facts: {
       lifecycle: "annual",
       form: "herb",
@@ -286,8 +281,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Flower spike with small, pale flowers",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&sub=6078&zoom=4&lat=%2036.633162&lng=-96.064453&subjectnumber=",
+    taxonIds: { gbif: 5341499, inaturalist: 48622 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -328,8 +322,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Dense patch of white clover in bloom",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lng=-96.064453&zoom=4&lat=%2036.633162&sub=6557&map=distribution&subjectnumber=",
+    taxonIds: { gbif: 5358748, inaturalist: 55745 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -373,8 +366,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Close-up of the leaves",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&lng=-96.064453&sub=3887&lat=%2036.633162&subjectnumber=&map=distribution",
+    taxonIds: { gbif: 5394163, inaturalist: 47602 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -424,8 +416,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Seed heads turning red-brown in late summer",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&map=distribution&lat=%2036.633162&lng=-96.064453&zoom=4&subjectnumber=&sub=6335",
+    taxonIds: { gbif: 8195144, inaturalist: 53197 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -459,6 +450,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Branches with berry clusters and red stalks",
       },
     ],
+    taxonIds: { gbif: 3082240, inaturalist: 54777 },
     facts: {
       lifecycle: "perennial",
       form: "tree",
@@ -491,8 +483,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Yellow flower head on a branched stalk",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=5740&lng=-96.064453&lat=%2036.633162&map=distribution&subjectnumber=&zoom=4",
+    taxonIds: { gbif: 3093702, inaturalist: 53104 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -521,8 +512,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Stem with round, flat seed pods",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=6524&lng=-96.064453&lat=%2036.633162&zoom=4&map=distribution&subjectnumber=",
+    taxonIds: { gbif: 3052680, inaturalist: 79358 },
     facts: {
       lifecycle: "annual",
       form: "herb",
@@ -568,6 +558,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Flowers among tall grass",
       },
     ],
+    taxonIds: { gbif: 3117449, inaturalist: 76897 },
     facts: {
       lifecycle: "annual",
       form: "herb",
@@ -606,6 +597,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Clump of horsetail at a woodland edge",
       },
     ],
+    taxonIds: { gbif: 7924597, inaturalist: 52724 },
     facts: {
       lifecycle: "perennial",
       form: "spore plant",
@@ -663,8 +655,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Deeply lobed, toothed leaves",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lat=%2036.633162&sub=5923&lng=-96.064453&subjectnumber=&map=distribution&zoom=4",
+    taxonIds: { gbif: 5341389, inaturalist: 56171 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -699,8 +690,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Rosette of ribbed leaves with seed spikes",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&sub=6201&lng=-96.064453&zoom=4&map=distribution&lat=%2036.633162",
+    taxonIds: { gbif: 3189767, inaturalist: 58961 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -732,8 +722,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Leaves with pale, silvery undersides",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&subjectnumber=&zoom=4&sub=9857&lng=-96.064453&map=distribution&lat=%2036.633162",
+    taxonIds: { gbif: 2993094, inaturalist: 54436 },
     facts: {
       lifecycle: "perennial",
       form: "shrub",
@@ -757,8 +746,6 @@ const PLANTS: Omit<Plant, "description">[] = [
     name: "St. John’s Wort",
     otherNames: ["Goatweed", "Klamath Weed", "Rosin Rose", "Tipton Weed"],
     image: `${IMAGE_BASE}/images/st_johns_wort.webP`,
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&zoom=4&map=distribution&lng=-96.064453&lat=%2036.633162&subjectnumber=&sub=4411",
     gallery: [
       {
         src: `${IMAGE_BASE}/images/st_johns_wort.webP`,
@@ -785,6 +772,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Flowers among grass",
       },
     ],
+    taxonIds: { gbif: 3189486, inaturalist: 56077 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -840,8 +828,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Tall stand beside a building",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&lng=-96.064453&map=distribution&lat=%2036.633162&zoom=4&subjectnumber=&sub=6569",
+    taxonIds: { gbif: 7960979, inaturalist: 51884 },
     facts: {
       lifecycle: "perennial",
       form: "herb",
@@ -879,6 +866,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Close-up of a flower cluster",
       },
     ],
+    taxonIds: { gbif: 3190538, inaturalist: 167829 },
     facts: {
       lifecycle: "perennial",
       form: "shrub",
@@ -929,6 +917,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Spiny, winged stem",
       },
     ],
+    taxonIds: { gbif: 3112801, inaturalist: 52989 },
     facts: {
       lifecycle: "biennial",
       form: "herb",
@@ -961,8 +950,7 @@ const PLANTS: Omit<Plant, "description">[] = [
         caption: "Young plants on bare soil",
       },
     ],
-    mapUrl:
-      "https://maps.eddmaps.org/point/eradication/index.cfm?notitle&sub=5514&subjectnumber=&lat=%2036.633162&lng=-96.064453&zoom=4&map=distribution",
+    taxonIds: { gbif: 3034742, inaturalist: 76610 },
     facts: {
       lifecycle: "biennial",
       form: "herb",

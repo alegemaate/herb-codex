@@ -3,6 +3,9 @@
   import { SITE_CONSTANTS } from "#lib/constants.js";
   import { familyId, formatMonths, genusId, neighbours } from "#lib/plants.js";
   import { excerpt, renderMarkdown } from "#lib/markdown.js";
+  import { floweringMonths } from "#lib/flowering.js";
+  import FloweringChart from "#lib/components/FloweringChart.svelte";
+  import PlantMap from "#lib/components/PlantMap.svelte";
   import Seo from "#lib/components/Seo.svelte";
   import UseBadges from "#lib/components/UseBadges.svelte";
   import type { PageProps } from "./$types";
@@ -13,6 +16,10 @@
   const plant = $derived(data.plant);
   const { family, genus, species } = $derived(plant.classification);
   const facts = $derived(plant.facts);
+  // Prefer observed flowering months; fall back to the hand-written ones.
+  const flowerMonths = $derived(
+    data.flowering ? floweringMonths(data.flowering) : facts.flowering,
+  );
   const { previous, next } = $derived(neighbours(plant.id));
   const isUsed = $derived(
     facts.uses.includes("food") || facts.uses.includes("medicinal"),
@@ -116,7 +123,7 @@
       </div>
       <div>
         <dt>Flowers</dt>
-        <dd>{formatMonths(facts.flowering)}</dd>
+        <dd>{formatMonths(flowerMonths)}</dd>
       </div>
       <div>
         <dt>Height</dt>
@@ -133,6 +140,13 @@
     </dl>
   </section>
 
+  {#if data.flowering}
+    <FloweringChart
+      flowering={data.flowering}
+      inaturalistId={plant.taxonIds.inaturalist}
+    />
+  {/if}
+
   <div class="description">
     <!-- eslint-disable-next-line svelte/no-at-html-tags -- our own Markdown, escaped by renderMarkdown -->
     {@html renderMarkdown(plant.description)}
@@ -144,21 +158,13 @@
     <Gallery images={plant.gallery} plantName={plant.name} />
   </section>
 
-  {#if plant.mapUrl}
-    <section class="no-print">
-      <h2>Map</h2>
-      <hr />
-      <iframe
-        class="map"
-        loading="lazy"
-        src={plant.mapUrl}
-        title={`${plant.name} map`}
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-      <a href="https://www.eddmaps.org">Courtesy of EDDMaps</a>
-    </section>
-  {/if}
+  <section class="no-print">
+    <h2>Where it grows</h2>
+    <hr />
+    {#key plant.id}
+      <PlantMap gbifTaxonKey={plant.taxonIds.gbif} plantName={plant.name} />
+    {/key}
+  </section>
 
   <nav class="pager no-print" aria-label="More plants">
     <a href={resolve(`plants/${previous.id}/`)} rel="prev">
@@ -255,11 +261,6 @@
 
   section {
     width: 100%;
-  }
-
-  .map {
-    width: 100%;
-    height: 30rem;
   }
 
   .pager {
