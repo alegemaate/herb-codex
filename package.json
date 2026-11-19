@@ -23,7 +23,7 @@
     "@fontsource/merriweather": "^5.3.0",
     "@foxd-io/eslint-config-foxd": "^2.0.2",
     "@playwright/test": "^1.64.0",
-    "@sveltejs/adapter-static": "^4.0.0",
+    "@sveltejs/adapter-static": "^4.0.1",
     "@sveltejs/kit": "^3.1.1",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "eslint": "^10.12.0",
